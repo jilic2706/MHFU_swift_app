@@ -30,6 +30,12 @@
 		09205202276125810019E1C3 /* Decoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09205201276125810019E1C3 /* Decoration.swift */; };
 		092052042761615F0019E1C3 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092052032761615F0019E1C3 /* Material.swift */; };
 		09205206276161F00019E1C3 /* SkillPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09205205276161F00019E1C3 /* SkillPoint.swift */; };
+		092EE7DD27655950001CF3DF /* SkillEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7DC27655950001CF3DF /* SkillEffect.swift */; };
+		092EE7DF276559DD001CF3DF /* SkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7DE276559DD001CF3DF /* SkillsViewModel.swift */; };
+		092EE7E2276560ED001CF3DF /* SkillListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7E1276560ED001CF3DF /* SkillListView.swift */; };
+		092EE7E4276561A0001CF3DF /* SkillRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7E3276561A0001CF3DF /* SkillRowView.swift */; };
+		092EE7E6276561D6001CF3DF /* SkillDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7E5276561D6001CF3DF /* SkillDetailView.swift */; };
+		092EE7E827656F09001CF3DF /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7E727656F09001CF3DF /* SectionTitleView.swift */; };
 		0962970927621CB800123630 /* MonsterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962970827621CB800123630 /* MonsterProvider.swift */; };
 		0962970B2762275A00123630 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962970A2762275A00123630 /* MonsterListView.swift */; };
 		0962970D276229CA00123630 /* MonsterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962970C276229CA00123630 /* MonsterRowView.swift */; };
@@ -44,7 +50,6 @@
 		09DD89EA276426E500B08AA4 /* MenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89E9276426E500B08AA4 /* MenuComponent.swift */; };
 		09DD89EC27642EF000B08AA4 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89EB27642EF000B08AA4 /* MenuItem.swift */; };
 		09DD89EF27643A6C00B08AA4 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */; };
-		09F033632764E314004E5397 /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 09F033622764E314004E5397 /* PagerTabStripView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +78,12 @@
 		09205201276125810019E1C3 /* Decoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoration.swift; sourceTree = "<group>"; };
 		092052032761615F0019E1C3 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		09205205276161F00019E1C3 /* SkillPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillPoint.swift; sourceTree = "<group>"; };
+		092EE7DC27655950001CF3DF /* SkillEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillEffect.swift; sourceTree = "<group>"; };
+		092EE7DE276559DD001CF3DF /* SkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewModel.swift; sourceTree = "<group>"; };
+		092EE7E1276560ED001CF3DF /* SkillListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillListView.swift; sourceTree = "<group>"; };
+		092EE7E3276561A0001CF3DF /* SkillRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillRowView.swift; sourceTree = "<group>"; };
+		092EE7E5276561D6001CF3DF /* SkillDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDetailView.swift; sourceTree = "<group>"; };
+		092EE7E727656F09001CF3DF /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
 		0962970827621CB800123630 /* MonsterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterProvider.swift; sourceTree = "<group>"; };
 		0962970A2762275A00123630 /* MonsterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
 		0962970C276229CA00123630 /* MonsterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRowView.swift; sourceTree = "<group>"; };
@@ -93,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F033632764E314004E5397 /* PagerTabStripView in Frameworks */,
 				0962971027622AC100123630 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +176,7 @@
 				09DD89ED27643A5C00B08AA4 /* Common */,
 				09DD89CE2763ACB100B08AA4 /* MonstersViewModel.swift */,
 				09DD89D02763C14800B08AA4 /* LocationsViewModel.swift */,
+				092EE7DE276559DD001CF3DF /* SkillsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 		092051DA2760FA3B0019E1C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				092EE7E0276560DD001CF3DF /* Skill */,
 				09DD89E8276426BE00B08AA4 /* Common */,
 				09DD89D72763CB8000B08AA4 /* Location */,
 				09DD89D62763CB7000B08AA4 /* Monster */,
@@ -199,8 +211,19 @@
 				09205205276161F00019E1C3 /* SkillPoint.swift */,
 				092052032761615F0019E1C3 /* Material.swift */,
 				092051F427610D570019E1C3 /* WeaponAttribute.swift */,
+				092EE7DC27655950001CF3DF /* SkillEffect.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		092EE7E0276560DD001CF3DF /* Skill */ = {
+			isa = PBXGroup;
+			children = (
+				092EE7E1276560ED001CF3DF /* SkillListView.swift */,
+				092EE7E3276561A0001CF3DF /* SkillRowView.swift */,
+				092EE7E5276561D6001CF3DF /* SkillDetailView.swift */,
+			);
+			path = Skill;
 			sourceTree = "<group>";
 		};
 		0962970727621C9500123630 /* DataProviders */ = {
@@ -237,6 +260,7 @@
 			children = (
 				09DD89E9276426E500B08AA4 /* MenuComponent.swift */,
 				09DD89EB27642EF000B08AA4 /* MenuItem.swift */,
+				092EE7E727656F09001CF3DF /* SectionTitleView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -267,7 +291,6 @@
 			name = "final_project-JI2175";
 			packageProductDependencies = (
 				0962970F27622AC100123630 /* Kingfisher */,
-				09F033622764E314004E5397 /* PagerTabStripView */,
 			);
 			productName = "final_project-JI2175";
 			productReference = 092051C62760FA0B0019E1C3 /* final_project-JI2175.app */;
@@ -327,8 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				092052042761615F0019E1C3 /* Material.swift in Sources */,
+				092EE7E6276561D6001CF3DF /* SkillDetailView.swift in Sources */,
 				092051E02760FC5A0019E1C3 /* Monster.swift in Sources */,
 				092051F327610C050019E1C3 /* Attribute.swift in Sources */,
+				092EE7E4276561A0001CF3DF /* SkillRowView.swift in Sources */,
+				092EE7E2276560ED001CF3DF /* SkillListView.swift in Sources */,
 				09DD89D12763C14800B08AA4 /* LocationsViewModel.swift in Sources */,
 				092051E8276106D90019E1C3 /* Item.swift in Sources */,
 				09DD89CF2763ACB100B08AA4 /* MonstersViewModel.swift in Sources */,
@@ -340,7 +366,10 @@
 				09205206276161F00019E1C3 /* SkillPoint.swift in Sources */,
 				0962970D276229CA00123630 /* MonsterRowView.swift in Sources */,
 				092051E6276100F40019E1C3 /* Location.swift in Sources */,
+				092EE7E827656F09001CF3DF /* SectionTitleView.swift in Sources */,
+				092EE7DF276559DD001CF3DF /* SkillsViewModel.swift in Sources */,
 				092051FA2761112E0019E1C3 /* ArmorSet.swift in Sources */,
+				092EE7DD27655950001CF3DF /* SkillEffect.swift in Sources */,
 				09DD89DF2763CC1600B08AA4 /* LocationDetailView.swift in Sources */,
 				09D9D3C72762888E0010299A /* LocationProvider.swift in Sources */,
 				092051FC2761115F0019E1C3 /* ArmorPieceType.swift in Sources */,
@@ -571,11 +600,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0962970E27622AC100123630 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		09F033622764E314004E5397 /* PagerTabStripView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 09F033612764E314004E5397 /* XCRemoteSwiftPackageReference "PagerTabStripView" */;
-			productName = PagerTabStripView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

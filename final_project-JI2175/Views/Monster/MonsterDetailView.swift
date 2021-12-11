@@ -48,13 +48,7 @@ struct MonsterDetailView: View {
                 Text(monster.description ?? "???")
                     .font(.body)
                     .padding()
-                Text("HABITATS")
-                    .font(.body)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("ModeDependantLabel"))
-                    .padding()
-                    .frame(width: UIScreen.main.bounds.width, alignment: .leading)
-                    .background(Color("ModeDependantGray"))
+                SectionTitleView(sectionLabel: "Habitats")
                     .foregroundColor(.white)
                 LazyVStack(alignment: .leading) {
                     ForEach(monsterLocations) { monsterLocation in

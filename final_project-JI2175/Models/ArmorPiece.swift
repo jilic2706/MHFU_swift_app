@@ -8,6 +8,8 @@
 import Foundation
 
 class ArmorPiece: Entity {
+    var rarity: Int
+    var type: ArmorPieceType
     var physicalDefense: Int
     var fireDefense: Int
     var waterDefense: Int
@@ -20,6 +22,8 @@ class ArmorPiece: Entity {
     var craftingCost: Int
     
     enum CodingKeys: String, CodingKey {
+        case rarity
+        case type = "armor_type"
         case physicalDefense = "physical_defense"
         case fireDefense = "fire_defense"
         case waterDefense = "water_defense"
@@ -34,6 +38,8 @@ class ArmorPiece: Entity {
     
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
+        rarity = try values.decode(Int.self, forKey: .rarity)
+        type = try values.decode(ArmorPieceType.self, forKey: .rarity)
         physicalDefense = try values.decode(Int.self, forKey: .physicalDefense)
         fireDefense = try values.decode(Int.self, forKey: .fireDefense)
         waterDefense = try values.decode(Int.self, forKey: .waterDefense)
@@ -47,7 +53,9 @@ class ArmorPiece: Entity {
         try super.init(from: decoder)
     }
     
-    init(id: Int, name: String, description: String?, entityType: EntityType, physicalDefense: Int, fireDefense: Int, waterDefense: Int, thunderDefense: Int, iceDefense: Int, dragonDefense: Int, slots: Int, skillPoints: [SkillPoint], craftingMaterials: [Material], craftingCost: Int) {
+    init(id: Int, name: String, description: String?, entityType: EntityType, rarity: Int, type: ArmorPieceType, physicalDefense: Int, fireDefense: Int, waterDefense: Int, thunderDefense: Int, iceDefense: Int, dragonDefense: Int, slots: Int, skillPoints: [SkillPoint], craftingMaterials: [Material], craftingCost: Int) {
+        self.rarity = rarity
+        self.type = type
         self.physicalDefense = physicalDefense
         self.fireDefense = fireDefense
         self.waterDefense = waterDefense

@@ -8,20 +8,20 @@
 import Foundation
 
 class Skill: Entity {
-    var activationThresholds: [Int]
+    var thresholds: [[SkillEffect]]
     
     enum CodingKeys: String, CodingKey {
-        case activationThresholds = "activation_threshold"
+        case thresholds
     }
     
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        activationThresholds = try values.decode([Int].self, forKey: .activationThresholds)
+        thresholds = try values.decode([[SkillEffect]].self, forKey: .thresholds)
         try super.init(from: decoder)
     }
     
-    init(id: Int, name: String, description: String?, entityType: EntityType, activationThresholds: [Int]) {
-        self.activationThresholds = activationThresholds
+    init(id: Int, name: String, description: String?, entityType: EntityType, thresholds: [[SkillEffect]]) {
+        self.thresholds = thresholds
         super.init(id: id, name: name, description: description, entityType: entityType)
     }
 }

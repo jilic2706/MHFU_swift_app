@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct MonsterListView: View {
-    @Binding var isMenuShown: Bool
-    
     @ObservedObject var viewModel: MonstersViewModel
     
     @State var selectedIndex = 0
@@ -73,7 +71,6 @@ struct MonsterListView: View {
 
 struct MonsterListView_Previews: PreviewProvider {
     static var previews: some View {
-        MonsterListView(isMenuShown: .constant(false), viewModel: MonstersViewModel(), locations: [])
-            .preferredColorScheme(.dark)
+        MonsterListView(viewModel: MonstersViewModel(), locations: LocationsViewModel().data)
     }
 }
