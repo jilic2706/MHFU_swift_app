@@ -13,6 +13,7 @@ enum MenuViewModel: Int, CaseIterable {
     case armor
     case quests
     case items
+    case skills
     case location
     
     var iconName: String {
@@ -22,6 +23,7 @@ enum MenuViewModel: Int, CaseIterable {
         case .armor: return "armor"
         case .quests: return "quest"
         case .items: return "item"
+        case .skills: return "skill"
         case .location: return "location"
         }
     }
@@ -33,6 +35,7 @@ enum MenuViewModel: Int, CaseIterable {
         case .armor: return "Armor"
         case .quests: return "Quests"
         case .items: return "Items"
+        case .skills: return "Skills"
         case .location: return "Locations"
         }
     }

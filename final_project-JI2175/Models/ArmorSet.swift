@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct ArmorSet: Codable {
+class ArmorSet: Entity {
+    var rarity: Int
     var armorPieces: [ArmorPiece]
     
     var totalPhysicalDefense: Int {
@@ -82,21 +83,21 @@ struct ArmorSet: Codable {
         return skillPoints
     }
 
-    var totalCraftingMaterials: [Material]? {
-        var craftingMaterials: [Material] = []
-        for armorPiece in armorPieces {
-            let armorPieceCraftingMaterials = armorPiece.craftingMaterials
-            for armorPieceCraftingMaterial in armorPieceCraftingMaterials {
-                if !craftingMaterials.contains(where: { $0.itemId == armorPieceCraftingMaterial.itemId }) {
-                    craftingMaterials.append(armorPieceCraftingMaterial)
-                } else {
-                    guard let existingCraftingMaterialIndex = craftingMaterials.firstIndex(where: { $0.itemId == armorPieceCraftingMaterial.itemId }) else { return nil }
-                    craftingMaterials[existingCraftingMaterialIndex].itemQuantity += armorPieceCraftingMaterial.itemQuantity
-                }
-            }
-        }
-        return craftingMaterials
-    }
+//    var totalCraftingMaterials: [Material]? {
+//        var craftingMaterials: [Material] = []
+//        for armorPiece in armorPieces {
+//            let armorPieceCraftingMaterials = armorPiece.craftingMaterials
+//            for armorPieceCraftingMaterial in armorPieceCraftingMaterials {
+//                if !craftingMaterials.contains(where: { $0.itemId == armorPieceCraftingMaterial.itemId }) {
+//                    craftingMaterials.append(armorPieceCraftingMaterial)
+//                } else {
+//                    guard let existingCraftingMaterialIndex = craftingMaterials.firstIndex(where: { $0.itemId == armorPieceCraftingMaterial.itemId }) else { return nil }
+//                    craftingMaterials[existingCraftingMaterialIndex].itemQuantity += armorPieceCraftingMaterial.itemQuantity
+//                }
+//            }
+//        }
+//        return craftingMaterials
+//    }
     
     var totalCraftingCost: Int {
         var craftingCost: Int = 0
@@ -104,5 +105,24 @@ struct ArmorSet: Codable {
             craftingCost += armorPiece.craftingCost
         }
         return craftingCost
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case rarity
+        case armorPieces = "armor_pieces"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        rarity = try values.decode(Int.self, forKey: .rarity)
+        armorPieces = try values.decode([ArmorPiece].self, forKey: .armorPieces)
+        //resources = try values.decode([Item].self, forKey: .resources)
+        try super.init(from: decoder)
+    }
+    
+    init(id: Int, name: String, description: String?, entityType: EntityType, rarity: Int, armorPieces: [ArmorPiece]) {
+        self.rarity = rarity
+        self.armorPieces = armorPieces
+        super.init(id: id, name: name, description: description, entityType: entityType)
     }
 }

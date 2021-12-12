@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,12 +36,10 @@
 		092EE7E4276561A0001CF3DF /* SkillRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7E3276561A0001CF3DF /* SkillRowView.swift */; };
 		092EE7E6276561D6001CF3DF /* SkillDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7E5276561D6001CF3DF /* SkillDetailView.swift */; };
 		092EE7E827656F09001CF3DF /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EE7E727656F09001CF3DF /* SectionTitleView.swift */; };
-		0962970927621CB800123630 /* MonsterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962970827621CB800123630 /* MonsterProvider.swift */; };
 		0962970B2762275A00123630 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962970A2762275A00123630 /* MonsterListView.swift */; };
 		0962970D276229CA00123630 /* MonsterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0962970C276229CA00123630 /* MonsterRowView.swift */; };
 		0962971027622AC100123630 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0962970F27622AC100123630 /* Kingfisher */; };
 		09629712276239A000123630 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09629711276239A000123630 /* MonsterDetailView.swift */; };
-		09D9D3C72762888E0010299A /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D9D3C62762888E0010299A /* LocationProvider.swift */; };
 		09DD89CF2763ACB100B08AA4 /* MonstersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89CE2763ACB100B08AA4 /* MonstersViewModel.swift */; };
 		09DD89D12763C14800B08AA4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89D02763C14800B08AA4 /* LocationsViewModel.swift */; };
 		09DD89DB2763CBFC00B08AA4 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89DA2763CBFC00B08AA4 /* LocationListView.swift */; };
@@ -50,6 +48,14 @@
 		09DD89EA276426E500B08AA4 /* MenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89E9276426E500B08AA4 /* MenuComponent.swift */; };
 		09DD89EC27642EF000B08AA4 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89EB27642EF000B08AA4 /* MenuItem.swift */; };
 		09DD89EF27643A6C00B08AA4 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */; };
+		734EA28C276571CF00778CC6 /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 734EA28B276571CF00778CC6 /* PagerTabStripView */; };
+		734EA28F27657D0700778CC6 /* Skills.json in Resources */ = {isa = PBXBuildFile; fileRef = 734EA28E27657D0700778CC6 /* Skills.json */; };
+		734EA29127657D5600778CC6 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 734EA29027657D5600778CC6 /* Monsters.json */; };
+		734EA29327657ECA00778CC6 /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 734EA29227657ECA00778CC6 /* Locations.json */; };
+		734EA29727658F5100778CC6 /* BlademasterArmorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EA29627658F5100778CC6 /* BlademasterArmorsViewModel.swift */; };
+		734EA29A2765962F00778CC6 /* ArmorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EA2992765962F00778CC6 /* ArmorDetailView.swift */; };
+		734EA29C2765A06F00778CC6 /* ArmorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EA29B2765A06F00778CC6 /* ArmorListView.swift */; };
+		734EA29E2765A14300778CC6 /* ArmorRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EA29D2765A14300778CC6 /* ArmorRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,11 +90,9 @@
 		092EE7E3276561A0001CF3DF /* SkillRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillRowView.swift; sourceTree = "<group>"; };
 		092EE7E5276561D6001CF3DF /* SkillDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDetailView.swift; sourceTree = "<group>"; };
 		092EE7E727656F09001CF3DF /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
-		0962970827621CB800123630 /* MonsterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterProvider.swift; sourceTree = "<group>"; };
 		0962970A2762275A00123630 /* MonsterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
 		0962970C276229CA00123630 /* MonsterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRowView.swift; sourceTree = "<group>"; };
 		09629711276239A000123630 /* MonsterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
-		09D9D3C62762888E0010299A /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
 		09DD89CE2763ACB100B08AA4 /* MonstersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersViewModel.swift; sourceTree = "<group>"; };
 		09DD89D02763C14800B08AA4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		09DD89DA2763CBFC00B08AA4 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,13 @@
 		09DD89E9276426E500B08AA4 /* MenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuComponent.swift; sourceTree = "<group>"; };
 		09DD89EB27642EF000B08AA4 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		734EA28E27657D0700778CC6 /* Skills.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Skills.json; sourceTree = "<group>"; };
+		734EA29027657D5600778CC6 /* Monsters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Monsters.json; sourceTree = "<group>"; };
+		734EA29227657ECA00778CC6 /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
+		734EA29627658F5100778CC6 /* BlademasterArmorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlademasterArmorsViewModel.swift; sourceTree = "<group>"; };
+		734EA2992765962F00778CC6 /* ArmorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorDetailView.swift; sourceTree = "<group>"; };
+		734EA29B2765A06F00778CC6 /* ArmorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorListView.swift; sourceTree = "<group>"; };
+		734EA29D2765A14300778CC6 /* ArmorRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734EA28C276571CF00778CC6 /* PagerTabStripView in Frameworks */,
 				0962971027622AC100123630 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +128,7 @@
 			children = (
 				092051C82760FA0B0019E1C3 /* final_project-JI2175 */,
 				092051C72760FA0B0019E1C3 /* Products */,
+				734EA28A276571CF00778CC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +143,7 @@
 		092051C82760FA0B0019E1C3 /* final_project-JI2175 */ = {
 			isa = PBXGroup;
 			children = (
-				0962970727621C9500123630 /* DataProviders */,
+				734EA28D27657CD100778CC6 /* LocalData */,
 				092051DA2760FA3B0019E1C3 /* Views */,
 				092051D92760FA350019E1C3 /* ViewModels */,
 				092051D82760FA2D0019E1C3 /* Models */,
@@ -177,6 +190,7 @@
 				09DD89CE2763ACB100B08AA4 /* MonstersViewModel.swift */,
 				09DD89D02763C14800B08AA4 /* LocationsViewModel.swift */,
 				092EE7DE276559DD001CF3DF /* SkillsViewModel.swift */,
+				734EA29627658F5100778CC6 /* BlademasterArmorsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -184,6 +198,7 @@
 		092051DA2760FA3B0019E1C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				734EA2982765961600778CC6 /* Armor */,
 				092EE7E0276560DD001CF3DF /* Skill */,
 				09DD89E8276426BE00B08AA4 /* Common */,
 				09DD89D72763CB8000B08AA4 /* Location */,
@@ -226,15 +241,6 @@
 			path = Skill;
 			sourceTree = "<group>";
 		};
-		0962970727621C9500123630 /* DataProviders */ = {
-			isa = PBXGroup;
-			children = (
-				0962970827621CB800123630 /* MonsterProvider.swift */,
-				09D9D3C62762888E0010299A /* LocationProvider.swift */,
-			);
-			path = DataProviders;
-			sourceTree = "<group>";
-		};
 		09DD89D62763CB7000B08AA4 /* Monster */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +279,33 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		734EA28A276571CF00778CC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		734EA28D27657CD100778CC6 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				734EA28E27657D0700778CC6 /* Skills.json */,
+				734EA29027657D5600778CC6 /* Monsters.json */,
+				734EA29227657ECA00778CC6 /* Locations.json */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		734EA2982765961600778CC6 /* Armor */ = {
+			isa = PBXGroup;
+			children = (
+				734EA2992765962F00778CC6 /* ArmorDetailView.swift */,
+				734EA29B2765A06F00778CC6 /* ArmorListView.swift */,
+				734EA29D2765A14300778CC6 /* ArmorRowView.swift */,
+			);
+			path = Armor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +324,7 @@
 			name = "final_project-JI2175";
 			packageProductDependencies = (
 				0962970F27622AC100123630 /* Kingfisher */,
+				734EA28B276571CF00778CC6 /* PagerTabStripView */,
 			);
 			productName = "final_project-JI2175";
 			productReference = 092051C62760FA0B0019E1C3 /* final_project-JI2175.app */;
@@ -311,7 +345,7 @@
 				};
 			};
 			buildConfigurationList = 092051C12760FA0B0019E1C3 /* Build configuration list for PBXProject "final_project-JI2175" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -337,6 +371,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734EA29127657D5600778CC6 /* Monsters.json in Resources */,
+				734EA28F27657D0700778CC6 /* Skills.json in Resources */,
+				734EA29327657ECA00778CC6 /* Locations.json in Resources */,
 				092051D12760FA0D0019E1C3 /* Preview Assets.xcassets in Resources */,
 				092051CE2760FA0D0019E1C3 /* Assets.xcassets in Resources */,
 			);
@@ -359,6 +396,7 @@
 				092051E8276106D90019E1C3 /* Item.swift in Sources */,
 				09DD89CF2763ACB100B08AA4 /* MonstersViewModel.swift in Sources */,
 				092051F1276107F50019E1C3 /* MonsterType.swift in Sources */,
+				734EA29727658F5100778CC6 /* BlademasterArmorsViewModel.swift in Sources */,
 				092051FE276113200019E1C3 /* Skill.swift in Sources */,
 				092051CC2760FA0B0019E1C3 /* ContentView.swift in Sources */,
 				092051ED276107C00019E1C3 /* WeaponType.swift in Sources */,
@@ -367,13 +405,12 @@
 				0962970D276229CA00123630 /* MonsterRowView.swift in Sources */,
 				092051E6276100F40019E1C3 /* Location.swift in Sources */,
 				092EE7E827656F09001CF3DF /* SectionTitleView.swift in Sources */,
+				734EA29C2765A06F00778CC6 /* ArmorListView.swift in Sources */,
 				092EE7DF276559DD001CF3DF /* SkillsViewModel.swift in Sources */,
 				092051FA2761112E0019E1C3 /* ArmorSet.swift in Sources */,
 				092EE7DD27655950001CF3DF /* SkillEffect.swift in Sources */,
 				09DD89DF2763CC1600B08AA4 /* LocationDetailView.swift in Sources */,
-				09D9D3C72762888E0010299A /* LocationProvider.swift in Sources */,
 				092051FC2761115F0019E1C3 /* ArmorPieceType.swift in Sources */,
-				0962970927621CB800123630 /* MonsterProvider.swift in Sources */,
 				092051CA2760FA0B0019E1C3 /* final_project_JI2175App.swift in Sources */,
 				092051EA2761078A0019E1C3 /* Weapon.swift in Sources */,
 				092051DE2760FA930019E1C3 /* EntityType.swift in Sources */,
@@ -384,11 +421,13 @@
 				09DD89DD2763CC0900B08AA4 /* LocationRowView.swift in Sources */,
 				092052002761241C0019E1C3 /* Quest.swift in Sources */,
 				0962970B2762275A00123630 /* MonsterListView.swift in Sources */,
+				734EA29E2765A14300778CC6 /* ArmorRowView.swift in Sources */,
 				09DD89DB2763CBFC00B08AA4 /* LocationListView.swift in Sources */,
 				09DD89EC27642EF000B08AA4 /* MenuItem.swift in Sources */,
 				09DD89EF27643A6C00B08AA4 /* MenuViewModel.swift in Sources */,
 				092051DC2760FA4D0019E1C3 /* Entity.swift in Sources */,
 				09629712276239A000123630 /* MonsterDetailView.swift in Sources */,
+				734EA29A2765962F00778CC6 /* ArmorDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +639,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0962970E27622AC100123630 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		734EA28B276571CF00778CC6 /* PagerTabStripView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F033612764E314004E5397 /* XCRemoteSwiftPackageReference "PagerTabStripView" */;
+			productName = PagerTabStripView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

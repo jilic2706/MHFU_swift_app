@@ -6,47 +6,51 @@
 //
 
 import SwiftUI
+import PagerTabStripView
 
 struct MonsterListView: View {
     @ObservedObject var viewModel: MonstersViewModel
     
-    @State var selectedIndex = 0
-    
+    var largeMonsters: [Monster] {
+        return viewModel.data.filter {
+            $0.size == .large
+        }
+    }
+    var smallMonsters: [Monster] {
+        return viewModel.data.filter {
+            $0.size == .small
+        }
+    }
     var locations: [Location]
     
     var body: some View {
-        VStack(spacing: 0) {
-            Picker(
-                "Pick a monster size",
-                selection: $selectedIndex,
-                content: {
-                    Text("LARGE").tag(0)
-                    Text("SMALL").tag(1)
-                }
-            )
-                .pickerStyle(SegmentedPickerStyle())
+        PagerTabStripView() {
             ScrollView {
                 LazyVStack(alignment: .leading) {
-                    ForEach(viewModel.data) { monster in
-                        if(selectedIndex == 0) {
-                            if(monster.size == .large) {
-                                MonsterRowView(monster: monster, locations: locations)
-                                Divider()
-                                    .background(Color("ModeDependantGray"))
-                            }
-                        } else if(selectedIndex == 1) {
-                            if(monster.size == .small) {
-                                MonsterRowView(monster: monster, locations: locations)
-                                Divider()
-                                    .background(Color("ModeDependantGray"))
-                            }
-                        }
+                    ForEach(largeMonsters) { largeMonster in
+                        MonsterRowView(monster: largeMonster, locations: locations)
+                        Divider()
+                            .background(Color("ModeDependantGray"))
                     }
                 }
             }
+            .pagerTabItem {
+                TitleNavBarItem(title: "LARGE")
+            }
+            ScrollView {
+                LazyVStack(alignment: .leading) {
+                    ForEach(smallMonsters) { smallMonster in
+                        MonsterRowView(monster: smallMonster, locations: locations)
+                        Divider()
+                            .background(Color("ModeDependantGray"))
+                    }
+                }
+            }
+            .pagerTabItem {
+                TitleNavBarItem(title: "SMALL")
+            }
         }
-            .navigationBarTitle("Monsters")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitle("Monsters", displayMode: .inline)
             .toolbar {
                 ToolbarItem(
                     placement: ToolbarItemPlacement.navigationBarLeading,
@@ -66,6 +70,34 @@ struct MonsterListView: View {
                     }
                 )
             }
+    }
+}
+
+struct TitleNavBarItem: View {
+    let title: String
+
+    var body: some View {
+        VStack {
+            Text(title.uppercased())
+                .foregroundColor(Color.gray)
+                .font(.subheadline)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
+    }
+}
+
+struct TitleNavBarItemWithImage: View {
+    let imageName: String
+
+    var body: some View {
+        VStack {
+            Image(imageName)
+                .resizable()
+                .frame(width: 21, height: 21)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
     }
 }
 

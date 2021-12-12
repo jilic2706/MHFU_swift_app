@@ -1,0 +1,290 @@
+[
+  {
+    "id": 8001,
+    "name": "Snowy Mountains",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/1/1e/FieldIcon01.png/revision/latest?cb=20100610145108",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/f/f8/MH2-Snowy_Mountains_Map.png/revision/latest?cb=20150919000312"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8002,
+    "name": "Jungle",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/6/69/FieldIcon16.png/revision/latest?cb=20100610145322",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/d/da/MH2-Jungle_Day_Map.png/revision/latest?cb=20150919000312"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8003,
+    "name": "Desert",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon03.png/revision/latest?cb=20100610145131",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/7/7e/MH2-Desert_Day_Map.png/revision/latest?cb=20150919000311"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8004,
+    "name": "Swamp",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/8/89/FieldIcon08.png/revision/latest?cb=20100610145218",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/0/09/MH2-Swamp_Map.png/revision/latest?cb=20150919000313"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8005,
+    "name": "Volcano",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/f/fe/FieldIcon07.png/revision/latest?cb=20100610145205",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/e/e1/MHFU-Volcano_Day_Map.png/revision/latest?cb=20150911000549"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8006,
+    "name": "Great Forest",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/d/df/FieldIcon09.png/revision/latest?cb=20100610145225",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/e/e2/MHFU-Great_Forest_Map.png/revision/latest?cb=20151116204932"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8007,
+    "name": "Forest and Hills",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/a/a1/FieldIcon10.png/revision/latest?cb=20100610145236",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/e/ec/MH2-Forest_and_Hills_Map.png/revision/latest?cb=20150919011549"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8008,
+    "name": "Old Jungle",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/7/75/FieldIcon14.png/revision/latest?cb=20100610145308",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/e/e6/MHFU-Old_Jungle_Map.png/revision/latest?cb=20150910004510"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8009,
+    "name": "Old Desert",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/d/df/FieldIcon11.png/revision/latest?cb=20100610145244",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/2/23/MHFU-Old_Desert_Map.png/revision/latest?cb=20150912003931"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8010,
+    "name": "Old Swamp",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/9/9e/FieldIcon13.png/revision/latest?cb=20100610145300",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/8/81/MHFU-Old_Swamp_Map.png/revision/latest?cb=20150910041424"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8011,
+    "name": "Old Volcano",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/8/8d/FieldIcon12.png/revision/latest?cb=20100610145252",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/2/2c/MHFU-Old_Volcano_Map.png/revision/latest?cb=20150912004440"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8012,
+    "name": "Fortress",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/3/30/MHFU-Fortress_Map.png/revision/latest/scale-to-width-down/215?cb=20150911044023"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8013,
+    "name": "Town",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/4/44/MH2-Town_Map.png/revision/latest?cb=20150919000415"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8014,
+    "name": "Tower",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/a/ab/FieldIcon17.png/revision/latest?cb=20100610145328",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/4/48/MHFU-Tower_Base_Map.png/revision/latest/scale-to-width-down/153?cb=20150911045103",
+      "https://static.wikia.nocookie.net/monsterhunter/images/a/a6/MHFU-Tower_1_Map.png/revision/latest/scale-to-width-down/183?cb=20150911045132"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8015,
+    "name": "Tower 2",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/a/ab/FieldIcon17.png/revision/latest?cb=20100610145328",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/4/48/MHFU-Tower_Base_Map.png/revision/latest/scale-to-width-down/153?cb=20150911045103",
+      "https://static.wikia.nocookie.net/monsterhunter/images/6/64/MHFU-Tower_2_Map.png/revision/latest/scale-to-width-down/252?cb=20150911045540"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8016,
+    "name": "Tower 3",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/a/ab/FieldIcon17.png/revision/latest?cb=20100610145328",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/d/dc/MHFU-Tower_3_Map.png/revision/latest?cb=20150911045955"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8017,
+    "name": "Castle Schrade",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/a/a9/MHFU-Castle_Schrade_Map.png/revision/latest?cb=20151116023056"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8018,
+    "name": "Battleground",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/3/33/MHFU-Battleground_Map.png/revision/latest?cb=20150912005733"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8019,
+    "name": "Snowy Mountains Peak",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/5/59/MHFU-Snowy_Mountains_Peak_Map.png/revision/latest?cb=20150915202024"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8020,
+    "name": "Arena",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/9/9e/MHFU-Arena_Map.png/revision/latest/scale-to-width-down/239?cb=20150912005049"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8021,
+    "name": "Great Arena",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/f/f3/MHFU-Great_Arena_Map.png/revision/latest/scale-to-width-down/256?cb=20150912005359"
+    ],
+    "inhabitants": [
+        1
+    ]
+  },
+  {
+    "id": 8022,
+    "name": "Moat Arena",
+    "description": "",
+    "entity_type": 8,
+    "icon": "https://static.wikia.nocookie.net/monsterhunter/images/c/ce/FieldIcon06.png/revision/latest?cb=20100610145155",
+    "map": [
+      "https://static.wikia.nocookie.net/monsterhunter/images/6/66/MHFU-Moat_Arena_Map.png/revision/latest?cb=20150912010252"
+    ],
+    "inhabitants": [
+        1
+    ]
+  }
+]

@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var currentMenuIndex = 1
     
     @ObservedObject private var monstersViewModel = MonstersViewModel()
+    @ObservedObject private var blademasterArmorsViewModel = BlademasterArmorsViewModel()
     @ObservedObject private var locationsViewModel = LocationsViewModel()
     @ObservedObject private var skillsViewModel = SkillsViewModel()
     
@@ -27,7 +28,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             //MonsterListView(viewModel: monstersViewModel, locations: locations)
-            SkillListView(viewModel: skillsViewModel)
+            //SkillListView(viewModel: skillsViewModel)
+            ArmorListView(blademasterViewModel: blademasterArmorsViewModel, gunnerViewModel: blademasterArmorsViewModel, skills: skills)
         }
         .accentColor(Color(.label))
     }

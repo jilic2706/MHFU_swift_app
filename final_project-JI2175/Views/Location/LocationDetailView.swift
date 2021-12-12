@@ -50,13 +50,6 @@ struct LocationDetailView: View {
         }
             .navigationBarTitle(location.name, displayMode: .inline)
             .navigationBarItems(
-                leading:
-                    Button(
-                        action: {},
-                        label: {
-                            Image(systemName: "list.dash")
-                        }
-                    ),
                 trailing:
                     Button(
                         action: {},

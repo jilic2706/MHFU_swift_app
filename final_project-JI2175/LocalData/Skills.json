@@ -1,0 +1,2127 @@
+[
+  {
+    "id": 6001,
+    "name": "Attack",
+    "description": "Increases or Decreases the hunter's attack power.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Attack Up (Large)",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Attack Up (Medium)",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Attack Up (Small)",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Attack Down (Large)",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Attack Down (Medium)",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Attack Down (Small)",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6002,
+    "name": "Defense",
+    "description": "Increases or decreases hunter's defense.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Defense +40",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Defense +30",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Defense +20",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        
+        {
+          "effect_name": "Defense -40",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Defense -30",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Defense -20",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6003,
+    "name": "Faint",
+    "description": "Affects lasting time of Faint status.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Faint negated",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Faint duration halved",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Faint duration doubled",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6004,
+    "name": "Paralysis",
+    "description": "Affects lasting time of Paralysis status.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Paralysis negated",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Paralysis duration halved",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Paralysis duration doubled",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6005,
+    "name": "Sleep",
+    "description": "Affects lasting time of Sleep status.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Sleep negated",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Sleep duration halved",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Sleep duration doubled",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6006,
+    "name": "Poison",
+    "description": "Affects lasting time of Poison status.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Poison Negated",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Poison Duration Halved",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Poison Duration (x2)",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6007,
+    "name": "Antiseptic",
+    "description": "Gives immunity to territorial dung.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Antiseptic",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6008,
+    "name": "Fatigue",
+    "description": "Affects lasting time of fatigue status",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Fatigue Cancellation",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6009,
+    "name": "Quake Res",
+    "description": "Gives immunity to quakes.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Immunity to quake",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6010,
+    "name": "Snow Res",
+    "description": "Gives immunity to Snowman status.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Snow Res",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6011,
+    "name": "Sneak",
+    "description": "Increases or decreases a wyvern noticing you sneaking.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Stealth",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Taunt",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6012,
+    "name": "Health",
+    "description": "Increases or decreases the hunter's maximum health.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Health +50",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Health +30",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Health +20",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Health -50",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Health -30",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Health -20",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6013,
+    "name": "Artisan",
+    "description": "Visible sharpness will be added to the weapon.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Sharpness +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6014,
+    "name": "Fencing",
+    "description": "Skill prevents attacks from being deflected, so combos will not be interrupted.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "ESP",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6015,
+    "name": "Sharpness",
+    "description": "Skill increases or decreases sharpness lost on the weapon.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Sharp Sword",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Blunt Edge",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6016,
+    "name": "Sword Draw",
+    "description": "Affects the weapon unsheathing attacks.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Art of Unsheathing",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6017,
+    "name": "Short Charge",
+    "description": "Increases or decreases the amount of time needed to charge Bows, Great Swords, Long Swords or Hammers.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Focus",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Distracted",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6018,
+    "name": "Expert",
+    "description": "Each Reckless Abandon level adds or subtracts Affinity, in 10% increments.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Reckless Abandon +3",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Reckless Abandon +2",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Reckless Abandon +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Reckless Abandon -1",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6019,
+    "name": "Sword Sharpener",
+    "description": "Affects the usage of Whetstone(s).",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Sharping Skl Inc",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Sharping Skl Halved",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6020,
+    "name": "Guard",
+    "description": "Affects weapons that are given the ability to block.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Guard +2",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Guard +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Guard -1",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6021,
+    "name": "Guard Up",
+    "description": "Enables the ability to block previous attacks that could not be blocked, e.g.: Gravios Beam, Fatalis Fireball, Congalala breath attack, etc.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Guard Inc",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6022,
+    "name": "Auto-Guard",
+    "description": "Enables auto-guard, which automatically blocks attacks if weapon permits.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Auto-Guard",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6023,
+    "name": "Throw",
+    "description": "Increases distance of thrown items (throwing knives, stones, paintballs, flash/sonic/tranq bombs) and reduces the chance of boomerangs breaking.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Throwing Skl Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6024,
+    "name": "Reload",
+    "description": "The skill increases or decreases the reload speed of the bowgun. It also increases the speed of vials being equipped to the bow.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Reload Speed +3",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Reload Speed +2",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Reload Speed +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Reload Speed -2",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Reload Speed -1",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6025,
+    "name": "Auto Reload",
+    "description": "Auto Reload allows bowguns to use an ammo type until the ammo is depleted, the Hunter has loaded a different type of ammo or current ammo has rapidfire. For bows, vials will be applied automatically. Also for bowguns, it brings the recoil to strong and can not be negated by any recoil reduction.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Auto Reload",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6026,
+    "name": "Recoil",
+    "description": "The skill increases or decreases the recoil on the bowgun. It does not affect bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Recoil Reduct +2",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Recoil Reduct +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Recoil Inc +2",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Recoil Inc +1",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6027,
+    "name": "Normal S Up",
+    "description": "Increase damage of NormalS/Rapid Shots by +10%.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "NormalS/RapidBow Up ",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6028,
+    "name": "Pierce S Up",
+    "description": "Increase damage of PierceS/Pierce Shots by +10%.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "PierceS/PierceBow Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6029,
+    "name": "Pellet S Up",
+    "description": "Increases damage of PelletS/Spread Shots by +30%.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "PelletS/ScatterBow Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6030,
+    "name": "Normal S Add",
+    "description": "This skill enables the ammo type to the bowgun that could not have been previously used. The amount of ammo available from the added skill varies from bowgun to bowgun. The skill does not affect bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "NormalS All LV Add",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "NormalS LV1 Add",
+          "req_skill_points": 15
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6031,
+    "name": "Pierce S Add",
+    "description": "This skill enables the ammo type to the bowgun that could not have been previously used. The amount of ammo available from the added skill varies from bowgun to bowgun. The skill does not affect bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "PierceS All LV Add",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "PierceS LV1 Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6032,
+    "name": "Pellet S Add",
+    "description": "This skill enables the ammo type to the bowgun that could not have been previously used. The amount of ammo available from the added skill varies from bowgun to bowgun. The skill does not affect bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "PelletS All LV Add",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "PelletS LV1 Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6033,
+    "name": "Crag S Add",
+    "description": "This skill enables the ammo type to the bowgun that could not have been previously used. The amount of ammo available from the added skill varies from bowgun to bowgun. The skill does not affect bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "CragS All LV Add",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "CragS LV1 Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6034,
+    "name": "Clust S Add",
+    "description": "This skill enables the ammo type to the bowgun that could not have been previously used. The amount of ammo available from the added skill varies from bowgun to bowgun. The skill does not affect bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "ClustS All LV Add",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "ClustS LV1 Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6035,
+    "name": "Power Coating Add",
+    "description": "This skill enables the ammo type to the bow that could not have been previously used. Also (apparently) increases the damage of relevent coating.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "PowerC Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6036,
+    "name": "Close Range Coating Add",
+    "description": "This skill enables the ammo type to the bow that could not have been previously used. Also (apparently) increases the damage of relevent coating.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "ClsRngC Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6037,
+    "name": "Poison Coating Add",
+    "description": "This skill enables the ammo type to the bow that could not have been previously used. Also (apparently) increases the damage of relevent coating.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "PoisonC Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6038,
+    "name": "Paralysis Coating Add",
+    "description": "This skill enables the ammo type to the bow that could not have been previously used. Also (apparently) increases the damage of relevent coating.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "ParaC Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6039,
+    "name": "Sleep Coating Add",
+    "description": "This skill enables the ammo type to the bow that could not have been previously used. Also (apparently) increases the damage of relevent coating.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "SleepC Add",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6040,
+    "name": "Capacity",
+    "description": "The skill adds an additional bullet slot to the available ammo type to the bowgun. For bows, one charge level is added, to a maximum of 4.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Load Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6041,
+    "name": "Precision",
+    "description": "The skill affects the shots from bowguns and bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Target Range Down",
+          "req_skill_points": -10
+        }
+      ],
+      [
+        {
+          "effect_name": "Target Range Up",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6042,
+    "name": "Special Attack",
+    "description": "The skill increases the numerical number displayed on the weapon's status ailment, if available, by x1.125.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Spc Atk Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6043,
+    "name": "Element Attack",
+    "description": "Increases the damage of Fire, Water, Ice, Thunder, and Dragon attacks.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Elem Atk Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6044,
+    "name": "Bomb Strength Up",
+    "description": "Increases damage dealt from Bombs or bomb based attacks by x1.5. Raises combination success rate for bombs to 100%.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Bomber",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6045,
+    "name": "Speed Setup",
+    "description": "Increases speed of setting traps and bombs.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Trap Master",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6046,
+    "name": "Hunger",
+    "description": "Affects the rate at which the hunter's stamina bar increases or decreases.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Hunger Negate",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Hunger Halved",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Hunger Inc[Hi]",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Hunger Inc[Lo]",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6047,
+    "name": "Gluttony",
+    "description": "Creates a chance for a 25 point stamina increase from item usage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Scavenger",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Filled Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6048,
+    "name": "Cooking",
+    "description": "Affects the speed with which you consume items.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Quick Eating",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Slow Life",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6049,
+    "name": "BBQ",
+    "description": "Affects cooking meat on a BBQ Spit.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "BBQ Celebrity",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "So-called BBQ King",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6050,
+    "name": "Stamina",
+    "description": "Affects amount of Stamina used when using Stamina-using actions.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Runner",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Flat Footed",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6051,
+    "name": "Constitution",
+    "description": "Decreases the amount of stamina used by rolling.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Constitution +2",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Constitution +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6052,
+    "name": "Protection",
+    "description": "Affects the chance of preventing or receiving extra damage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Divine Protection",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Demonic Protection",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6053,
+    "name": "Hearing Protection",
+    "description": "Provides immunity to screams, roars, etc.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "High Grade Earplug",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Earplug",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6054,
+    "name": "Wind Press",
+    "description": "Provides immunity to Wind Press.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Drg Wind Breaker",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "High Wind Pres",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Low Wing Pres",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6055,
+    "name": "Terrain",
+    "description": "Affects terrain damage received.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Terrain Damage Negated",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Terrain Damaged Reduced",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Terrain Damage Increased (High)",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Terrain Damaged Increased (Low)",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6056,
+    "name": "Evade",
+    "description": "Increases invulnerability time during dodges.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Evade +2",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Evade +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6057,
+    "name": "Evade Distance",
+    "description": "Increases distance cleared when dodge rolling and diving.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Evade Distance Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6058,
+    "name": "Potential",
+    "description": "Defense and strength changes when Health is below 40%.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Adrenaline +2",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Adrenaline +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Worry",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6059,
+    "name": "Guts",
+    "description": "Saves Hunter from instant death hit when health is above 65.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Guts",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6060,
+    "name": "Anti-Theft",
+    "description": "Chance of resisting a pick pocket.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Steal No Effect",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6061,
+    "name": "Anti-Theft",
+    "description": "Chance of resisting a pick pocket.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Steal No Effect",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6062,
+    "name": "Everlasting",
+    "description": "Item effects (i.e. cool drinks) last longer.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Item Usage Improved",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Item Usage Decline",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6063,
+    "name": "Wide Area",
+    "description": "Party receives the Potion effect as well when a potion is used.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Wide Area +2",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Wide Area +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        
+      ]
+    ]
+  },
+  {
+    "id": 6064,
+    "name": "Backpacking",
+    "description": "Movement speed when carrying eggs increases and can fall from greater heights.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Backpacking Expert",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        
+      ]
+    ]
+  },
+  {
+    "id": 6065,
+    "name": "All Resist",
+    "description": "Increases or Decreases the hunter's resistance to all elemental damage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "All Res +10",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "All Res +5",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "All Res +3",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "All Res -10",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "All Res -5",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "All Res -3",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6066,
+    "name": "Fire Res",
+    "description": "Increases or Decreases the hunter's resistance to fire-based elemental damage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Fire Res +15",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Fire Res +10",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Fire Res +5",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Fire Res -15",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Fire Res -10",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Fire Res -5",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6067,
+    "name": "Water Res",
+    "description": "Increases or Decreases the hunter's resistance to water-based elemental damage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Water Res +15",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Water Res +10",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Water Res +5",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Water Res -15",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Water Res -10",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Water Res -5",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6068,
+    "name": "Ice Res",
+    "description": "Increases or Decreases the hunter's resistance to ice-based elemental damage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Ice Res +15",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Ice Res +10",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Ice Res +5",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Ice Res -15",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Ice Res -10",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Ice Res -5",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6069,
+    "name": "Thunder Res",
+    "description": "Increases or Decreases the hunter's resistance to thunder-based elemental damage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Thunder Res +15",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Thunder Res +10",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Thunder Res +5",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Thunder Res -15",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Thunder Res -10",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Thunder Res -5",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6070,
+    "name": "Dragon Res",
+    "description": "Increases or Decreases the hunter's resistance to dragon-based elemental damage.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Dragon Res +15",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Dragon Res +10",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Dragon Res +5",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Dragon Res -15",
+          "req_skill_points": -20
+        },
+        {
+          "effect_name": "Dragon Res -10",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Dragon Res -5",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6070,
+    "name": "Heat Res",
+    "description": "Affects the rate in which the hunter's health decreases in hot places.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Heat Cancel[Hi]",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Heat Cancel[Lo]",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Heat Inc[Lo]",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6071,
+    "name": "Cold Res",
+    "description": "Effects the rate in which the hunter's stamina decreases in cold places.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Cold Elim[Hi]",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Cold Elim[Lo]",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Cold Inc[Lo]",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6072,
+    "name": "Map",
+    "description": "The skill makes it so that you automatically see the map of the place you're in without having a map in your inventory.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "FarSight",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "No Map",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6073,
+    "name": "Gathering",
+    "description": "Affects chances of amount of gathering at one location.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Gathering +2",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Gathering +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Gathering -2",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Gathering -1",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6074,
+    "name": "High Speed Gathering",
+    "description": "Increases speed of Carving, Mining, Gathering, and Bugnetting.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "HighSpdGather",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6075,
+    "name": "Whim",
+    "description": "Affects Pick axes, Bug nets and Flutes breaking.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Divine Whim",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Spirit's Whim",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Devil's Whim",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Spectre's Whim",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6076,
+    "name": "Carving",
+    "description": "Affects Carving.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Carving Celebrity",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Carving Iron Man",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6077,
+    "name": "Tranquilizer",
+    "description": "Captured monster yields more rewards.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Tranq Celeb",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Tranq Whiz",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6078,
+    "name": "Fate",
+    "description": "Increased or Decreases amount of Rewards.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Luck Booster",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Good Luck",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Calamity",
+          "req_skill_points": -15
+        },
+        {
+          "effect_name": "Bad Luck",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6079,
+    "name": "Fishing",
+    "description": "Increase time to hook fish when bait is eaten.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Fishing Expert",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6080,
+    "name": "Psychic",
+    "description": "Affects your ability to keep track of the monster.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Autotracker",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Detect",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6081,
+    "name": "Perceive",
+    "description": "Painted or Auto-tracked target turns yellow when ready to be captured.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Tranq Guru",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6082,
+    "name": "Recovery Speed",
+    "description": "Affects how fast the Red portion of your health recovers.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Damage Rec Spd +2",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Damage Rec Spd +1",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Damage Rec Spd -1",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6083,
+    "name": "Recovery",
+    "description": "Increases or decreases the amount of health recovered by healing items.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "HealthRecItemsImprvd",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "HltRecItemWeakened",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6084,
+    "name": "Mix Success Rate",
+    "description": "Increases or decreases all combo's success rates.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Combine Success +45",
+          "req_skill_points": 20
+        },
+        {
+          "effect_name": "Combine Success +25",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Combine Success +15",
+          "req_skill_points": 10
+        }
+      ],
+      [
+        {
+          "effect_name": "Combine Success -10",
+          "req_skill_points": -10
+        }
+      ]
+    ]
+  },
+  {
+    "id": 6085,
+    "name": "Maxes out the amount of Shot/Coatings that can be made on each combination.",
+    "description": "Increases or decreases all combo's success rates.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Bullet Limit",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6086,
+    "name": "Alchemy.",
+    "description": "Allows player to use Alchemy.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Alchemy",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6087,
+    "name": "Gunnery",
+    "description": "This skill boosts the power of static/map defenses and gunlance shelling, depending heavily on the level obtained.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Gunnery King",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "Gunnery Master",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6088,
+    "name": "Horn",
+    "description": "Affects Flutes and Hunting Horns.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Flute Expert",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6089,
+    "name": "Comrade Guide",
+    "description": "Increases your comrade's experience and skil point gain.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "ComradeGuidance&Trade",
+          "req_skill_points": 15
+        },
+        {
+          "effect_name": "ComradeGuidance",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6090,
+    "name": "Comrade Attack",
+    "description": "Increases your comrade's attack.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Comrade Attack Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6091,
+    "name": "Comrade Defense",
+    "description": "Increases your comrade's defense.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Comrade Defense Up",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6092,
+    "name": "Resist Status",
+    "description": "Resists all abnormal status effects.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Self-Defense",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6093,
+    "name": "Fury",
+    "description": "Combines the effects of Guts and Adrenaline +2.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Emboldened",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6094,
+    "name": "Edge Master",
+    "description": "Combines the effects of Sharpness +1 and Attack Up (Large).",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Stellar Hunter",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6095,
+    "name": "Steady Hand",
+    "description": "A combination of Normal S/Pierce S/Pellet S Up for bowguns, and Rapid/Pierce/Spread Shot Up for bows.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Straight & True",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6096,
+    "name": "Anti-Fire Dragon",
+    "description": "Combines the effects of Terrain Damage Negate and Fire Res +10.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Metallic Protection",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6097,
+    "name": "Anti-Chameleos",
+    "description": "Combines the effects of Poison Negated, Steal No Effect, and Fatigue Cancellation.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Fiery Protection",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  },
+  {
+    "id": 6098,
+    "name": "Anti-Daora",
+    "description": "Combines the effects of Snow Res and Drg Wind Breaker.",
+    "entity_type": 6,
+    "thresholds": [
+      [
+        {
+          "effect_name": "Frosty Protection",
+          "req_skill_points": 10
+        }
+      ],
+      [
+
+      ]
+    ]
+  }
+]
