@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher",
+        "state": {
+          "branch": null,
+          "revision": "0c02c46cfdc0656ce74fd0963a75e5000a0b7f23",
+          "version": "7.1.2"
+        }
+      },
+      {
+        "package": "PagerTabStripView",
+        "repositoryURL": "https://github.com/xmartlabs/PagerTabStripView",
+        "state": {
+          "branch": null,
+          "revision": "fa9e00bebfa60f997a4f3db2ad6bc3f07f7df70b",
+          "version": "3.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
