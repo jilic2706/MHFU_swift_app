@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArmorPiece: Codable {
+struct ArmorPiece: Codable, Hashable {    
     var name: String
     var description: String
     var type: ArmorPieceType
@@ -17,6 +17,17 @@ struct ArmorPiece: Codable {
     var thunderDefense: Int
     var iceDefense: Int
     var dragonDefense: Int
+    
+    var elementalDefenses: Dictionary<String, Int> {
+        var defenses: Dictionary<String, Int> = [:]
+        defenses["Fire"] = fireDefense
+        defenses["Water"] = waterDefense
+        defenses["Thunder"] = thunderDefense
+        defenses["Ice"] = iceDefense
+        defenses["Dragon"] = dragonDefense
+        return defenses
+    }
+    
     var slots: Int
     var skillPoints: [SkillPoint]
     //var craftingMaterials: [Material]

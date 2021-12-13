@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SkillPoint: Codable {
+struct SkillPoint: Codable, Hashable {
     var skillId: Int
     var skillQuantity: Int
     

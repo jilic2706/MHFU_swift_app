@@ -20,24 +20,12 @@ struct SkillListView: View {
                 }
             }
         }
-            .navigationBarTitle("Skills")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitle("Skills", displayMode: .inline)
             .toolbar {
                 ToolbarItem(
                     placement: ToolbarItemPlacement.navigationBarLeading,
                     content: {
                         MenuComponent()
-                    }
-                )
-                ToolbarItem(
-                    placement: ToolbarItemPlacement.navigationBarTrailing,
-                    content: {
-                        Button(
-                            action: {},
-                            label: {
-                                Image(systemName: "magnifyingglass.circle")
-                            }
-                        )
                     }
                 )
             }

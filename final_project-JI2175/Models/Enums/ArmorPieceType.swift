@@ -17,15 +17,15 @@ enum ArmorPieceType: Int, CustomStringConvertible, Codable {
     var description: String {
         switch self {
         case .head:
-            return "Head"
+            return "helm"
         case .torso:
-            return "Torso"
+            return "chest"
         case .arms:
-            return "Arms"
+            return "arms"
         case .waist:
-            return "Waist"
+            return "waist"
         case .feet:
-            return "Feet"
+            return "legs"
         }
     }
 }

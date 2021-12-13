@@ -45,15 +45,19 @@ struct SkillDetailView: View {
             }
         }
             .navigationBarTitle(skill.name, displayMode: .inline)
-            .navigationBarItems(
-                trailing:
-                    Button(
-                        action: {},
-                        label: {
-                            Image(systemName: "magnifyingglass.circle")
-                        }
-                    )
-            )
+            .toolbar {
+                ToolbarItem(
+                    placement: ToolbarItemPlacement.navigationBarTrailing,
+                    content: {
+                        Button(
+                            action: {},
+                            label: {
+                                Image(systemName: "bookmark")
+                            }
+                        )
+                    }
+                )
+            }
     }
 }
 

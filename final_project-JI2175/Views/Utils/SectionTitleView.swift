@@ -11,12 +11,14 @@ struct SectionTitleView: View {
     var sectionLabel: String
     
     var body: some View {
-        Text(sectionLabel.uppercased())
-            .font(.body)
-            .fontWeight(.bold)
-            .foregroundColor(Color("ModeDependantLabel"))
+        HStack {
+            Text(sectionLabel.uppercased())
+                .font(.body)
+                .fontWeight(.bold)
+                .foregroundColor(Color("ModeDependantLabel"))
+            Spacer()
+        }
             .padding()
-            .frame(width: UIScreen.main.bounds.width, alignment: .leading)
             .background(Color("ModeDependantGray"))
     }
 }

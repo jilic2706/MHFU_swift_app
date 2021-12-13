@@ -66,7 +66,7 @@ struct MonsterDetailView: View {
                     Button(
                         action: {},
                         label: {
-                            Image(systemName: "magnifyingglass.circle")
+                            Image(systemName: "bookmark")
                         }
                     )
             )

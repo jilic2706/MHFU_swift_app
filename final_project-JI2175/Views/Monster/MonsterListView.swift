@@ -11,6 +11,8 @@ import PagerTabStripView
 struct MonsterListView: View {
     @ObservedObject var viewModel: MonstersViewModel
     
+    @State private var selection = 0
+    
     var largeMonsters: [Monster] {
         return viewModel.data.filter {
             $0.size == .large
@@ -24,7 +26,7 @@ struct MonsterListView: View {
     var locations: [Location]
     
     var body: some View {
-        PagerTabStripView() {
+        PagerTabStripView(selection: $selection) {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(largeMonsters) { largeMonster in
@@ -35,7 +37,7 @@ struct MonsterListView: View {
                 }
             }
             .pagerTabItem {
-                TitleNavBarItem(title: "LARGE")
+                TitleNavBarItemWithText(title: "Large")
             }
             ScrollView {
                 LazyVStack(alignment: .leading) {
@@ -47,7 +49,7 @@ struct MonsterListView: View {
                 }
             }
             .pagerTabItem {
-                TitleNavBarItem(title: "SMALL")
+                TitleNavBarItemWithText(title: "Small")
             }
         }
             .navigationBarTitle("Monsters", displayMode: .inline)
@@ -58,46 +60,7 @@ struct MonsterListView: View {
                         MenuComponent()
                     }
                 )
-                ToolbarItem(
-                    placement: ToolbarItemPlacement.navigationBarTrailing,
-                    content: {
-                        Button(
-                            action: {},
-                            label: {
-                                Image(systemName: "magnifyingglass.circle")
-                            }
-                        )
-                    }
-                )
             }
-    }
-}
-
-struct TitleNavBarItem: View {
-    let title: String
-
-    var body: some View {
-        VStack {
-            Text(title.uppercased())
-                .foregroundColor(Color.gray)
-                .font(.subheadline)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.white)
-    }
-}
-
-struct TitleNavBarItemWithImage: View {
-    let imageName: String
-
-    var body: some View {
-        VStack {
-            Image(imageName)
-                .resizable()
-                .frame(width: 21, height: 21)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.white)
     }
 }
 

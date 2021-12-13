@@ -10,16 +10,21 @@ import PagerTabStripView
 
 struct ArmorListView: View {
     @ObservedObject var blademasterViewModel: BlademasterArmorsViewModel
-    @ObservedObject var gunnerViewModel: BlademasterArmorsViewModel
+    @ObservedObject var gunnerViewModel: GunnerArmorsViewModel
+    
+    @State var selection: Int = 0
     
     var skills: [Skill]
     
     var blademasterArmors: [ArmorSet] {
         return blademasterViewModel.data
     }
+    var gunnerArmors: [ArmorSet] {
+        return gunnerViewModel.data
+    }
     
     var body: some View {
-        PagerTabStripView() {
+        PagerTabStripView(selection: $selection) {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(blademasterArmors) { blademasterArmor in
@@ -30,11 +35,19 @@ struct ArmorListView: View {
                 }
             }
             .pagerTabItem {
-                TitleNavBarItem(title: "BLADEMASTER")
+                TitleNavBarItemWithText(title: "Blademaster")
             }
-            Text("--- UNDER CONSTRUCTION ---")
+            ScrollView {
+                LazyVStack(alignment: .leading) {
+                    ForEach(gunnerArmors) { gunnerArmor in
+                        ArmorRowView(armorSet: gunnerArmor, skills: skills)
+                        Divider()
+                            .background(Color("ModeDependantGray"))
+                    }
+                }
+            }
             .pagerTabItem {
-                TitleNavBarItem(title: "GUNNER")
+                TitleNavBarItemWithText(title: "Gunner")
             }
         }
             .navigationBarTitle("Armors", displayMode: .inline)
@@ -45,23 +58,12 @@ struct ArmorListView: View {
                         MenuComponent()
                     }
                 )
-                ToolbarItem(
-                    placement: ToolbarItemPlacement.navigationBarTrailing,
-                    content: {
-                        Button(
-                            action: {},
-                            label: {
-                                Image(systemName: "magnifyingglass.circle")
-                            }
-                        )
-                    }
-                )
             }
     }
 }
 
 struct ArmorListView_Previews: PreviewProvider {
     static var previews: some View {
-        ArmorListView(blademasterViewModel: BlademasterArmorsViewModel(), gunnerViewModel: BlademasterArmorsViewModel(), skills: SkillsViewModel().data)
+        ArmorListView(blademasterViewModel: BlademasterArmorsViewModel(), gunnerViewModel: GunnerArmorsViewModel(), skills: SkillsViewModel().data)
     }
 }

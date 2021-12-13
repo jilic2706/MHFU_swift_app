@@ -21,43 +21,44 @@ struct LocationDetailView: View {
     }
     
     var body: some View {
-        ZStack(alignment: .top) {
-            HStack(alignment: .center) {
-                Text(location.name)
-                    .font(Font.title.smallCaps())
-                    .fontWeight(.heavy)
-            }
-                .padding(EdgeInsets(top: 21, leading: 0, bottom: 0, trailing: 0))
-            VStack(alignment: .leading, spacing: 21) {
-                Spacer()
-                if(locationMaps.count < 2) {
-                    KFImage(locationMaps[0])
-                        .resizable()
-                        .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.45)
-                } else {
-                    TabView {
+        VStack(alignment: .center, spacing: 21) {
+            Spacer()
+            if(locationMaps.count < 2) {
+                KFImage(locationMaps[0])
+                    .resizable()
+                    .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.45)
+            } else {
+                TabView {
+                    HStack(alignment: .center, spacing: 0) {
                         KFImage(locationMaps[0])
                             .resizable()
                             .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.45)
+                        Image(systemName: "chevron.right")
+                    }
+                    HStack(alignment: .center, spacing: 0) {
+                        Image(systemName: "chevron.left")
                         KFImage(locationMaps[1])
                             .resizable()
                             .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.45)
-                    }.tabViewStyle(PageTabViewStyle())
-                    .frame(height: UIScreen.main.bounds.height * 0.45)
-                }
-                Spacer()
+                    }
+                }.tabViewStyle(PageTabViewStyle())
             }
+            Spacer()
         }
             .navigationBarTitle(location.name, displayMode: .inline)
-            .navigationBarItems(
-                trailing:
-                    Button(
-                        action: {},
-                        label: {
-                            Image(systemName: "magnifyingglass.circle")
-                        }
-                    )
-            )
+            .toolbar {
+                ToolbarItem(
+                    placement: ToolbarItemPlacement.navigationBarTrailing,
+                    content: {
+                        Button(
+                            action: {},
+                            label: {
+                                Image(systemName: "bookmark")
+                            }
+                        )
+                    }
+                )
+            }
     }
 }
 

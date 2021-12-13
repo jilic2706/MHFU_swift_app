@@ -9,10 +9,10 @@ import SwiftUI
 import PagerTabStripView
 
 struct ArmorDetailView: View {
+    @State var selection = 0
+    
     var armorSet: ArmorSet
     var skills: [Skill]
-    
-    @State var currentTab = 3
     
     var rarityColor: String {
         switch armorSet.rarity {
@@ -29,61 +29,37 @@ struct ArmorDetailView: View {
     }
     
     var body: some View {
-        PagerTabStripView(selection: $currentTab) {
-            ScrollView {
-                LazyVStack {
-                    HStack {
-                        ZStack {
-                            Image("chest\(rarityColor)")
-                                .resizable()
-                                .frame(width: 70, height: 70)
-                            Text("RARE-\(armorSet.rarity)")
-                                .font(.body)
-                                .foregroundColor(Color(rarityColor))
-                        }
-                    }
+        PagerTabStripView(selection: $selection) {
+            ArmorSetView(armorSet: armorSet, skills: skills, rarityColor: rarityColor)
+                .pagerTabItem {
+                    TitleNavBarItemWithText(title: "Set")
                 }
-            }
-            .pagerTabItem {
-                TitleNavBarItem(title: "Set")
-            }
-            Text("HEAD")
-            .pagerTabItem {
-                TitleNavBarItemWithImage(imageName: "helm\(rarityColor)")
-            }
-            Text("CHEST")
-            .pagerTabItem {
-                TitleNavBarItemWithImage(imageName: "chest\(rarityColor)")
-            }
-            Text("ARMS")
-            .pagerTabItem {
-                TitleNavBarItemWithImage(imageName: "arms\(rarityColor)")
-            }
-            Text("WAIST")
-            .pagerTabItem {
-                TitleNavBarItemWithImage(imageName: "waist\(rarityColor)")
-            }
-            Text("LEGS")
-            .pagerTabItem {
-                TitleNavBarItemWithImage(imageName: "legs\(rarityColor)")
+            ForEach(armorSet.armorPieces, id: \.self) { armorPiece in
+                ArmorPieceView(armorPiece: armorPiece, skills: skills, rarity: armorSet.rarity)
+                    .pagerTabItem {
+                        TitleNavBarItemWithImage(imageName: "\(armorPiece.type.description)-rarity-1")
+                    }
             }
         }
-            .pagerTabStripViewStyle(.barButton(indicatorBarColor: .blue))
             .navigationBarTitle(armorSet.name, displayMode: .inline)
-            .navigationBarItems(
-                trailing:
-                    Button(
-                        action: {},
-                        label: {
-                            Image(systemName: "magnifyingglass.circle")
-                        }
-                    )
-            )
+            .toolbar {
+                ToolbarItem(
+                    placement: ToolbarItemPlacement.navigationBarTrailing,
+                    content: {
+                        Button(
+                            action: {},
+                            label: {
+                                Image(systemName: "bookmark")
+                            }
+                        )
+                    }
+                )
+            }
     }
 }
 
 struct ArmorDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ArmorDetailView(armorSet: BlademasterArmorsViewModel().data[1], skills: SkillsViewModel().data)
+        ArmorDetailView(armorSet: ArmorProvider.shared.armorSet, skills: SkillProvider.shared.skills)
     }
 }

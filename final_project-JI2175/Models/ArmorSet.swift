@@ -59,6 +59,16 @@ class ArmorSet: Entity {
         return dragonDefense
     }
     
+    var totalElementalDefenses: Dictionary<String, Int> {
+        var defenses: Dictionary<String, Int> = [:]
+        defenses["Fire"] = totalFireDefense
+        defenses["Water"] = totalWaterDefense
+        defenses["Thunder"] = totalThunderDefense
+        defenses["Ice"] = totalIceDefense
+        defenses["Dragon"] = totalDragonDefense
+        return defenses
+    }
+    
     var totalSlots: Int {
         var slots: Int = 0
         for armorPiece in armorPieces {
@@ -67,7 +77,7 @@ class ArmorSet: Entity {
         return slots
     }
     
-    var totalSkillPoints: [SkillPoint]? {
+    var totalSkillPoints: [SkillPoint] {
         var skillPoints: [SkillPoint] = []
         for armorPiece in armorPieces {
             let armorPieceSkillPoints = armorPiece.skillPoints
@@ -75,7 +85,7 @@ class ArmorSet: Entity {
                 if !skillPoints.contains(where: { $0.skillId == armorPieceSkillPoint.skillId }) {
                     skillPoints.append(armorPieceSkillPoint)
                 } else {
-                    guard let existingSkillPointIndex = skillPoints.firstIndex(where: { $0.skillId == armorPieceSkillPoint.skillId }) else { return nil }
+                    let existingSkillPointIndex = skillPoints.firstIndex(where: { $0.skillId == armorPieceSkillPoint.skillId }) ?? 0
                     skillPoints[existingSkillPointIndex].skillQuantity += armorPieceSkillPoint.skillQuantity
                 }
             }
