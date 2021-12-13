@@ -14,9 +14,11 @@ enum MenuViewModel: Int, CaseIterable {
     case quests
     case items
     case skills
+    case decorations
     case location
+    case bookmarks
     
-    var iconName: String {
+    var menuItemIcon: String {
         switch self {
         case .monsters: return "monster"
         case .weapons: return "weapon"
@@ -24,11 +26,13 @@ enum MenuViewModel: Int, CaseIterable {
         case .quests: return "quest"
         case .items: return "item"
         case .skills: return "skill"
+        case .decorations: return "decoration"
         case .location: return "location"
+        case .bookmarks: return "bookmark"
         }
     }
     
-    var label: String {
+    var menuItemText: String {
         switch self {
         case .monsters: return "Monsters"
         case .weapons: return "Weapons"
@@ -36,7 +40,23 @@ enum MenuViewModel: Int, CaseIterable {
         case .quests: return "Quests"
         case .items: return "Items"
         case .skills: return "Skills"
+        case .decorations: return "Decoration"
         case .location: return "Locations"
+        case .bookmarks: return "Bookmarks"
+        }
+    }
+    
+    var menuSelection: Int {
+        switch self {
+        case .monsters: return 0
+        case .weapons: return 1
+        case .armor: return 2
+        case .quests: return 3
+        case .items: return 4
+        case .skills: return 5
+        case .decorations: return 6
+        case .location: return 7
+        case .bookmarks: return 8
         }
     }
 }

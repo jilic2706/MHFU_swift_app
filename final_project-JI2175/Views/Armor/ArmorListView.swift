@@ -9,6 +9,8 @@ import SwiftUI
 import PagerTabStripView
 
 struct ArmorListView: View {
+    @Binding var menuOpened: Bool
+    
     @ObservedObject var blademasterViewModel: BlademasterArmorsViewModel
     @ObservedObject var gunnerViewModel: GunnerArmorsViewModel
     
@@ -55,7 +57,14 @@ struct ArmorListView: View {
                 ToolbarItem(
                     placement: ToolbarItemPlacement.navigationBarLeading,
                     content: {
-                        MenuComponent()
+                        Button(
+                            action: {
+                                self.menuOpened.toggle()
+                            },
+                            label: {
+                                Image(systemName: "list.dash")
+                            }
+                        )
                     }
                 )
             }
@@ -64,6 +73,6 @@ struct ArmorListView: View {
 
 struct ArmorListView_Previews: PreviewProvider {
     static var previews: some View {
-        ArmorListView(blademasterViewModel: BlademasterArmorsViewModel(), gunnerViewModel: GunnerArmorsViewModel(), skills: SkillsViewModel().data)
+        ArmorListView(menuOpened: .constant(false), blademasterViewModel: BlademasterArmorsViewModel(), gunnerViewModel: GunnerArmorsViewModel(), skills: SkillsViewModel().data)
     }
 }

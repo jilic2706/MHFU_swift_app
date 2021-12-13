@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import SideMenu
 
 struct ContentView: View {
-    @State private var isSearchPressed: Bool = false
+    @State private var menuOpened: Bool = false
+    @State private var selection: Int = 0
     @State private var searchQuery: String = ""
     
+    @ObservedObject private var bookmarkViewModel = EntityViewModel()
     @ObservedObject private var monstersViewModel = MonstersViewModel()
     @ObservedObject private var blademasterArmorsViewModel = BlademasterArmorsViewModel()
     @ObservedObject private var gunnerArmorsViewModel = GunnerArmorsViewModel()
@@ -43,61 +46,53 @@ struct ContentView: View {
         return everything
     }
     
+    func toggleMenu() {
+        menuOpened.toggle()
+    }
+    
     var body: some View {
-        TabView() {
+        ZStack {
             NavigationView {
-                MonsterListView(viewModel: monstersViewModel, locations: locations)
+                if(selection == 0) {
+                    MonsterListView(menuOpened: $menuOpened, bookmarkViewModel: bookmarkViewModel, viewModel: monstersViewModel, locations: locations)
+                } else if(selection == 2) {
+                    ArmorListView(menuOpened: $menuOpened, blademasterViewModel: blademasterArmorsViewModel, gunnerViewModel: gunnerArmorsViewModel, skills: skills)
+                } else if(selection == 5) {
+                    SkillListView(menuOpened: $menuOpened, viewModel: skillsViewModel)
+                } else if(selection == 7) {
+                    LocationListView(menuOpened: $menuOpened, bookmarkViewModel: bookmarkViewModel, locationsViewModel: locationsViewModel)
+                }
+                else {
+                    OOBView(selection: $selection)
+                }
+                
+    //            VStack {
+    //                Spacer()
+    //                Text("hey.")
+    //                Spacer()
+    //            }
+    //                .toolbar {
+    //                    ToolbarItem(
+    //                        placement: ToolbarItemPlacement.navigationBarTrailing,
+    //                        content: {
+    //                            HStack {
+    //                                Spacer()
+    //                                Image(systemName: "magnifyingglass.circle")
+    //                                    .resizable()
+    //                                    .frame(width: 21, height: 21)
+    //                                TextField("Search", text: $searchQuery)
+    //                                    .autocapitalization(.none)
+    //                                Spacer()
+    //                            }
+    //                                .padding(.horizontal)
+    //                                .frame(width: UIScreen.main.bounds.width)
+    //                    })
+    //                }
             }
                 .accentColor(Color(.label))
-                .tabItem {
-                    Text("Monsters")
-                }
-            NavigationView {
-                ArmorListView(blademasterViewModel: blademasterArmorsViewModel, gunnerViewModel: gunnerArmorsViewModel, skills: skills)
-            }
-                .accentColor(Color(.label))
-                .tabItem {
-                    Text("Armors")
-                }
-            NavigationView {
-                SkillListView(viewModel: skillsViewModel)
-            }
-                .accentColor(Color(.label))
-                .tabItem {
-                    Text("Skills")
-                }
-            NavigationView {
-                VStack {
-                    Spacer()
-                    Text("hey.")
-                    Spacer()
-                }
-                    .toolbar {
-                        ToolbarItem(
-                            placement: ToolbarItemPlacement.navigationBarTrailing,
-                            content: {
-                                HStack {
-                                    Spacer()
-                                    Image(systemName: "magnifyingglass.circle")
-                                        .resizable()
-                                        .frame(width: 21, height: 21)
-                                    TextField("Search", text: $searchQuery)
-                                        .autocapitalization(.none)
-                                    Spacer()
-                                }
-                                    .padding(.horizontal)
-                                    .frame(width: UIScreen.main.bounds.width)
-                        })
-                    }
-            }
-                .accentColor(Color(.label))
-                .tabItem {
-                    Image(systemName: "magnifyingglass.circle")
-                        .resizable()
-                        .frame(width: 21, height: 21)
-                }
+            SideMenu(selection: $selection, width: UIScreen.main.bounds.width * 0.7, menuOpened: menuOpened, toggleMenu: toggleMenu)
         }
-            .visibility(isSearchPressed ? .invisible : .visible)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

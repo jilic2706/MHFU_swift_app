@@ -9,6 +9,8 @@ import SwiftUI
 import Kingfisher
 
 struct MonsterDetailView: View {
+    @ObservedObject var bookmarkViewModel: EntityViewModel
+    
     var monster: Monster
     var locations: [Location]
     
@@ -52,7 +54,7 @@ struct MonsterDetailView: View {
                     .foregroundColor(.white)
                 LazyVStack(alignment: .leading) {
                     ForEach(monsterLocations) { monsterLocation in
-                        LocationRowView(location: monsterLocation)
+                        LocationRowView(bookmarkViewModel: EntityViewModel(), location: monsterLocation)
                             .padding(.horizontal)
                         Divider()
                             .background(Color("ModeDependantGray"))
@@ -64,7 +66,9 @@ struct MonsterDetailView: View {
             .navigationBarItems(
                 trailing:
                     Button(
-                        action: {},
+                        action: {
+                            bookmarkViewModel.toggleBookmark(entity: monster as Monster)
+                        },
                         label: {
                             Image(systemName: "bookmark")
                         }
@@ -75,7 +79,7 @@ struct MonsterDetailView: View {
 
 struct MonsterDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MonsterDetailView(monster: Monster(id: 75, name: "Teostra", description: "A brutal male Elder Dragon with breath of flame and expert control over fire. Its vile temperament means anyone who approaches is subject to fire and brimstone. Known to attack towns, the Guild keeps tabs on its movements.", entityType: .monster, type: .elderDragon, size: .large, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/4/4b/FrontierGen-Teostra_Icon.png/revision/latest/scale-to-width-down/70?cb=20160325041246"), habitats: [8001, 8002]), locations: [Location(id: 8001, name: "Snowy Mountains", description: "", entityType: .location, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/1/1e/FieldIcon01.png/revision/latest?cb=20100610145108"), map: ["https://static.wikia.nocookie.net/monsterhunter/images/f/f8/MH2-Snowy_Mountains_Map.png/revision/latest?cb=20150919000312"], inhabitants: [0]), Location(id: 8002, name: "Jungle", description: "", entityType: .location, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/6/69/FieldIcon16.png/revision/latest?cb=20100610145322"), map: ["https://static.wikia.nocookie.net/monsterhunter/images/d/da/MH2-Jungle_Day_Map.png/revision/latest?cb=20150919000312"], inhabitants: [0])])
+        MonsterDetailView(bookmarkViewModel: EntityViewModel(), monster: Monster(id: 75, name: "Teostra", description: "A brutal male Elder Dragon with breath of flame and expert control over fire. Its vile temperament means anyone who approaches is subject to fire and brimstone. Known to attack towns, the Guild keeps tabs on its movements.", entityType: .monster, type: .elderDragon, size: .large, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/4/4b/FrontierGen-Teostra_Icon.png/revision/latest/scale-to-width-down/70?cb=20160325041246"), habitats: [8001, 8002]), locations: [Location(id: 8001, name: "Snowy Mountains", description: "", entityType: .location, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/1/1e/FieldIcon01.png/revision/latest?cb=20100610145108"), map: ["https://static.wikia.nocookie.net/monsterhunter/images/f/f8/MH2-Snowy_Mountains_Map.png/revision/latest?cb=20150919000312"], inhabitants: [0]), Location(id: 8002, name: "Jungle", description: "", entityType: .location, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/6/69/FieldIcon16.png/revision/latest?cb=20100610145322"), map: ["https://static.wikia.nocookie.net/monsterhunter/images/d/da/MH2-Jungle_Day_Map.png/revision/latest?cb=20150919000312"], inhabitants: [0])])
             .preferredColorScheme(.light)
     }
 }

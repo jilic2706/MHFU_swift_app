@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SkillListView: View {
+    @Binding var menuOpened: Bool
+    
     @ObservedObject var viewModel: SkillsViewModel
     
     var body: some View {
@@ -25,7 +27,14 @@ struct SkillListView: View {
                 ToolbarItem(
                     placement: ToolbarItemPlacement.navigationBarLeading,
                     content: {
-                        MenuComponent()
+                        Button(
+                            action: {
+                                self.menuOpened.toggle()
+                            },
+                            label: {
+                                Image(systemName: "list.dash")
+                            }
+                        )
                     }
                 )
             }
@@ -34,6 +43,6 @@ struct SkillListView: View {
 
 struct SkillListView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillListView(viewModel: SkillsViewModel())
+        SkillListView(menuOpened: .constant(false), viewModel: SkillsViewModel())
     }
 }

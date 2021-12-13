@@ -9,6 +9,9 @@ import SwiftUI
 import PagerTabStripView
 
 struct MonsterListView: View {
+    @Binding var menuOpened: Bool
+    
+    @ObservedObject var bookmarkViewModel: EntityViewModel
     @ObservedObject var viewModel: MonstersViewModel
     
     @State private var selection = 0
@@ -30,7 +33,7 @@ struct MonsterListView: View {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(largeMonsters) { largeMonster in
-                        MonsterRowView(monster: largeMonster, locations: locations)
+                        MonsterRowView(bookmarkViewModel: bookmarkViewModel, monster: largeMonster, locations: locations)
                         Divider()
                             .background(Color("ModeDependantGray"))
                     }
@@ -42,7 +45,7 @@ struct MonsterListView: View {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(smallMonsters) { smallMonster in
-                        MonsterRowView(monster: smallMonster, locations: locations)
+                        MonsterRowView(bookmarkViewModel: bookmarkViewModel, monster: smallMonster, locations: locations)
                         Divider()
                             .background(Color("ModeDependantGray"))
                     }
@@ -57,7 +60,14 @@ struct MonsterListView: View {
                 ToolbarItem(
                     placement: ToolbarItemPlacement.navigationBarLeading,
                     content: {
-                        MenuComponent()
+                        Button(
+                            action: {
+                                self.menuOpened.toggle()
+                            },
+                            label: {
+                                Image(systemName: "list.dash")
+                            }
+                        )
                     }
                 )
             }
@@ -66,6 +76,6 @@ struct MonsterListView: View {
 
 struct MonsterListView_Previews: PreviewProvider {
     static var previews: some View {
-        MonsterListView(viewModel: MonstersViewModel(), locations: LocationsViewModel().data)
+        MonsterListView(menuOpened: .constant(false), bookmarkViewModel: EntityViewModel(), viewModel: MonstersViewModel(), locations: LocationsViewModel().data)
     }
 }
