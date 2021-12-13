@@ -70,7 +70,6 @@
 		73D423232767B38D00E98A29 /* MenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D423222767B38D00E98A29 /* MenuContent.swift */; };
 		73D423272767CAAA00E98A29 /* OOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D423262767CAAA00E98A29 /* OOBView.swift */; };
 		73D4232B2767D29200E98A29 /* EntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4232A2767D29200E98A29 /* EntityViewModel.swift */; };
-		82E852D92B0D27FCD0791DAF /* Pods_final_project_JI2175.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF391B3F5EA6890BC7BCC84 /* Pods_final_project_JI2175.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,8 +112,6 @@
 		09DD89DC2763CC0900B08AA4 /* LocationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRowView.swift; sourceTree = "<group>"; };
 		09DD89DE2763CC1600B08AA4 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
-		1BF391B3F5EA6890BC7BCC84 /* Pods_final_project_JI2175.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_final_project_JI2175.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		336288D225A63AFEF4D5EE9F /* Pods-final_project-JI2175.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final_project-JI2175.release.xcconfig"; path = "Target Support Files/Pods-final_project-JI2175/Pods-final_project-JI2175.release.xcconfig"; sourceTree = "<group>"; };
 		7311B1382766769800E12A96 /* TitleNavBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNavBarItems.swift; sourceTree = "<group>"; };
 		7311B13C2766859300E12A96 /* ArmorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorProvider.swift; sourceTree = "<group>"; };
 		7311B13E2766878100E12A96 /* SkillProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillProvider.swift; sourceTree = "<group>"; };
@@ -139,7 +136,6 @@
 		73D423222767B38D00E98A29 /* MenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContent.swift; sourceTree = "<group>"; };
 		73D423262767CAAA00E98A29 /* OOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBView.swift; sourceTree = "<group>"; };
 		73D4232A2767D29200E98A29 /* EntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityViewModel.swift; sourceTree = "<group>"; };
-		74DEA15CF072BF8E2B1B9E99 /* Pods-final_project-JI2175.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final_project-JI2175.debug.xcconfig"; path = "Target Support Files/Pods-final_project-JI2175/Pods-final_project-JI2175.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +145,6 @@
 			files = (
 				734EA28C276571CF00778CC6 /* PagerTabStripView in Frameworks */,
 				0962971027622AC100123630 /* Kingfisher in Frameworks */,
-				82E852D92B0D27FCD0791DAF /* Pods_final_project_JI2175.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +156,6 @@
 			children = (
 				092051C82760FA0B0019E1C3 /* final_project-JI2175 */,
 				092051C72760FA0B0019E1C3 /* Products */,
-				734EA28A276571CF00778CC6 /* Frameworks */,
-				8EC7621BE790E984E0D47499 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -334,14 +327,6 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		734EA28A276571CF00778CC6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1BF391B3F5EA6890BC7BCC84 /* Pods_final_project_JI2175.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		734EA2982765961600778CC6 /* Armor */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,15 +356,6 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
-		8EC7621BE790E984E0D47499 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				74DEA15CF072BF8E2B1B9E99 /* Pods-final_project-JI2175.debug.xcconfig */,
-				336288D225A63AFEF4D5EE9F /* Pods-final_project-JI2175.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,11 +363,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 092051D52760FA0D0019E1C3 /* Build configuration list for PBXNativeTarget "final_project-JI2175" */;
 			buildPhases = (
-				164D51823938F80FC72BB781 /* [CP] Check Pods Manifest.lock */,
 				092051C22760FA0B0019E1C3 /* Sources */,
 				092051C32760FA0B0019E1C3 /* Frameworks */,
 				092051C42760FA0B0019E1C3 /* Resources */,
-				F52BA10901806975100D664E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -456,48 +430,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		164D51823938F80FC72BB781 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-final_project-JI2175-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F52BA10901806975100D664E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-final_project-JI2175/Pods-final_project-JI2175-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-final_project-JI2175/Pods-final_project-JI2175-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-final_project-JI2175/Pods-final_project-JI2175-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		092051C22760FA0B0019E1C3 /* Sources */ = {
@@ -684,7 +616,6 @@
 		};
 		092051D62760FA0D0019E1C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74DEA15CF072BF8E2B1B9E99 /* Pods-final_project-JI2175.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -706,7 +637,6 @@
 		};
 		092051D72760FA0D0019E1C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 336288D225A63AFEF4D5EE9F /* Pods-final_project-JI2175.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

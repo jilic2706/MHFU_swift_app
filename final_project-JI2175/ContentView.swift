@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SideMenu
 
 struct ContentView: View {
     @State private var menuOpened: Bool = false

@@ -22,13 +22,13 @@ struct ArmorPieceView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                HStack(spacing: 7) {
+                HStack(spacing: 14) {
                     Image("\(armorPiece.type.description)-rarity-\(rarity)")
                         .resizable()
                         .frame(width: 54, height: 54)
                     VStack(alignment: .leading, spacing: 0) {
                         Text(armorPiece.name)
-                            .font(.title)
+                            .font(.title2)
                             .foregroundColor(Color("-rarity-\(rarity)"))
                         Text("RARE - \(rarity)")
                             .font(.body)
