@@ -15,6 +15,9 @@ final class BlademasterArmorsViewModel: ObservableObject {
     
     init() {
         getData()
+        if(self.data.isEmpty) {
+            getDataFromLocalJSON()
+        }
     }
     
     func getData() {
@@ -34,5 +37,17 @@ final class BlademasterArmorsViewModel: ObservableObject {
                     self.data = $0
                   })
             .store(in: &cancellable)
+    }
+    
+    func getDataFromLocalJSON() {
+        if let localJSONPath = Bundle.main.url(forResource: "BlademasterArmors", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: localJSONPath)
+                let dataFromJSON = try JSONDecoder().decode([ArmorSet].self, from: data)
+                self.data = dataFromJSON
+            } catch {
+                print(error)
+            }
+        }
     }
 }

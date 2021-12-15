@@ -22,22 +22,6 @@ struct SkillListView: View {
                 }
             }
         }
-            .navigationBarTitle("Skills", displayMode: .inline)
-            .toolbar {
-                ToolbarItem(
-                    placement: ToolbarItemPlacement.navigationBarLeading,
-                    content: {
-                        Button(
-                            action: {
-                                self.menuOpened.toggle()
-                            },
-                            label: {
-                                Image(systemName: "list.dash")
-                            }
-                        )
-                    }
-                )
-            }
     }
 }
 

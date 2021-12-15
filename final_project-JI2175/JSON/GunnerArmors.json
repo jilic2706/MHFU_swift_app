@@ -1,0 +1,166 @@
+[
+  {
+    "id": 3500,
+    "name": "Mafumofu",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 1,
+    "armor_pieces": [
+      {
+        "name": "Mafumofu Hood",
+        "description": "Special product of Pokke. The intense cold of the mountains is not a problem.",
+        "armor_type": 1,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 0,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          },
+          {
+            "skill_id": 6081,
+            "skill_quantity": 3
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Jacket",
+        "description": "Special product of Pokke. The fluffy feeling makes you want to wear it everywhere.",
+        "armor_type": 2,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 0,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6068,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Mittens",
+        "description": "Special product of Pokke. These thick mittens are famed for their ease of use.",
+        "armor_type": 3,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6010,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Coat",
+        "description": "Special product of Pokke. Its warmth and fluffiness are absolutely lovely.",
+        "armor_type": 4,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6073,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Boots",
+        "description": "Special product of Pokke. Retains heat and allows for easy movement in the snow.",
+        "armor_type": 5,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6068,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      }
+    ]
+  }
+]

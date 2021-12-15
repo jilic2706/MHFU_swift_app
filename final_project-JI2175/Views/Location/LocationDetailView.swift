@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct LocationDetailView: View {
-    @ObservedObject var bookmarkViewModel: EntityViewModel
+    @ObservedObject var bookmarksViewModel: BookmarksViewModel
     
     var location: Location
     
@@ -20,6 +20,14 @@ struct LocationDetailView: View {
             mapURLs.append(URL(string: mapString)!)
         }
         return mapURLs
+    }
+    
+    var isBookmarked: String {
+        if(bookmarksViewModel.entityAlreadyBookmarked(entity: location)) {
+            return "bookmark.fill"
+        } else {
+            return "bookmark"
+        }
     }
     
     var body: some View {
@@ -54,10 +62,10 @@ struct LocationDetailView: View {
                     content: {
                         Button(
                             action: {
-                                bookmarkViewModel.toggleBookmark(entity: location as Location)
+                                bookmarksViewModel.toggleBookmark(entity: location)
                             },
                             label: {
-                                Image(systemName: "bookmark")
+                                Image(systemName: isBookmarked)
                             }
                         )
                     }
@@ -68,7 +76,7 @@ struct LocationDetailView: View {
 
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationDetailView(bookmarkViewModel: EntityViewModel(), location: Location(id: 8001, name: "Snowy Mountains", description: "", entityType: .location, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/1/1e/FieldIcon01.png/revision/latest?cb=20100610145108"), map: ["https://static.wikia.nocookie.net/monsterhunter/images/4/48/MHFU-Tower_Base_Map.png/revision/latest/scale-to-width-down/153?cb=20150911045103",
+        LocationDetailView(bookmarksViewModel: BookmarksViewModel(), location: Location(id: 8001, name: "Snowy Mountains", description: "", entityType: .location, icon: URL(string: "https://static.wikia.nocookie.net/monsterhunter/images/1/1e/FieldIcon01.png/revision/latest?cb=20100610145108"), map: ["https://static.wikia.nocookie.net/monsterhunter/images/4/48/MHFU-Tower_Base_Map.png/revision/latest/scale-to-width-down/153?cb=20150911045103",
             "https://static.wikia.nocookie.net/monsterhunter/images/a/a6/MHFU-Tower_1_Map.png/revision/latest/scale-to-width-down/183?cb=20150911045132"], inhabitants: [0]))
     }
 }

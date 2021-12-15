@@ -11,7 +11,7 @@ import PagerTabStripView
 struct MonsterListView: View {
     @Binding var menuOpened: Bool
     
-    @ObservedObject var bookmarkViewModel: EntityViewModel
+    @ObservedObject var bookmarksViewModel: BookmarksViewModel
     @ObservedObject var viewModel: MonstersViewModel
     
     @State private var selection = 0
@@ -26,14 +26,14 @@ struct MonsterListView: View {
             $0.size == .small
         }
     }
-    var locations: [Location]
+    var allLocations: [Location]
     
     var body: some View {
         PagerTabStripView(selection: $selection) {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(largeMonsters) { largeMonster in
-                        MonsterRowView(bookmarkViewModel: bookmarkViewModel, monster: largeMonster, locations: locations)
+                        MonsterRowView(bookmarksViewModel: bookmarksViewModel, monster: largeMonster, allLocations: allLocations)
                         Divider()
                             .background(Color("ModeDependantGray"))
                     }
@@ -45,7 +45,7 @@ struct MonsterListView: View {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(smallMonsters) { smallMonster in
-                        MonsterRowView(bookmarkViewModel: bookmarkViewModel, monster: smallMonster, locations: locations)
+                        MonsterRowView(bookmarksViewModel: bookmarksViewModel, monster: smallMonster, allLocations: allLocations)
                         Divider()
                             .background(Color("ModeDependantGray"))
                     }
@@ -55,27 +55,11 @@ struct MonsterListView: View {
                 TitleNavBarItemWithText(title: "Small")
             }
         }
-            .navigationBarTitle("Monsters", displayMode: .inline)
-            .toolbar {
-                ToolbarItem(
-                    placement: ToolbarItemPlacement.navigationBarLeading,
-                    content: {
-                        Button(
-                            action: {
-                                self.menuOpened.toggle()
-                            },
-                            label: {
-                                Image(systemName: "list.dash")
-                            }
-                        )
-                    }
-                )
-            }
     }
 }
 
 struct MonsterListView_Previews: PreviewProvider {
     static var previews: some View {
-        MonsterListView(menuOpened: .constant(false), bookmarkViewModel: EntityViewModel(), viewModel: MonstersViewModel(), locations: LocationsViewModel().data)
+        MonsterListView(menuOpened: .constant(false), bookmarksViewModel: BookmarksViewModel(), viewModel: MonstersViewModel(), allLocations: LocationsViewModel().data)
     }
 }

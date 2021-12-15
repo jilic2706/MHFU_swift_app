@@ -11,12 +11,13 @@ import PagerTabStripView
 struct ArmorListView: View {
     @Binding var menuOpened: Bool
     
+    @ObservedObject var bookmarksViewModel: BookmarksViewModel
     @ObservedObject var blademasterViewModel: BlademasterArmorsViewModel
     @ObservedObject var gunnerViewModel: GunnerArmorsViewModel
     
     @State var selection: Int = 0
     
-    var skills: [Skill]
+    var allSkills: [Skill]
     
     var blademasterArmors: [ArmorSet] {
         return blademasterViewModel.data
@@ -30,7 +31,7 @@ struct ArmorListView: View {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(blademasterArmors) { blademasterArmor in
-                        ArmorRowView(armorSet: blademasterArmor, skills: skills)
+                        ArmorRowView(bookmarksViewModel: bookmarksViewModel, armorSet: blademasterArmor, allSkills: allSkills)
                         Divider()
                             .background(Color("ModeDependantGray"))
                     }
@@ -42,7 +43,7 @@ struct ArmorListView: View {
             ScrollView {
                 LazyVStack(alignment: .leading) {
                     ForEach(gunnerArmors) { gunnerArmor in
-                        ArmorRowView(armorSet: gunnerArmor, skills: skills)
+                        ArmorRowView(bookmarksViewModel: bookmarksViewModel, armorSet: gunnerArmor, allSkills: allSkills)
                         Divider()
                             .background(Color("ModeDependantGray"))
                     }
@@ -52,27 +53,11 @@ struct ArmorListView: View {
                 TitleNavBarItemWithText(title: "Gunner")
             }
         }
-            .navigationBarTitle("Armors", displayMode: .inline)
-            .toolbar {
-                ToolbarItem(
-                    placement: ToolbarItemPlacement.navigationBarLeading,
-                    content: {
-                        Button(
-                            action: {
-                                self.menuOpened.toggle()
-                            },
-                            label: {
-                                Image(systemName: "list.dash")
-                            }
-                        )
-                    }
-                )
-            }
     }
 }
 
 struct ArmorListView_Previews: PreviewProvider {
     static var previews: some View {
-        ArmorListView(menuOpened: .constant(false), blademasterViewModel: BlademasterArmorsViewModel(), gunnerViewModel: GunnerArmorsViewModel(), skills: SkillsViewModel().data)
+        ArmorListView(menuOpened: .constant(false), bookmarksViewModel: BookmarksViewModel(), blademasterViewModel: BlademasterArmorsViewModel(), gunnerViewModel: GunnerArmorsViewModel(), allSkills: SkillsViewModel().data)
     }
 }

@@ -9,10 +9,12 @@ import SwiftUI
 import PagerTabStripView
 
 struct ArmorDetailView: View {
+    @ObservedObject var bookmarksViewModel: BookmarksViewModel
+    
     @State var selection = 0
     
     var armorSet: ArmorSet
-    var skills: [Skill]
+    var allSkills: [Skill]
     
     var rarityColor: String {
         switch armorSet.rarity {
@@ -28,14 +30,22 @@ struct ArmorDetailView: View {
         }
     }
     
+    var isBookmarked: String {
+        if(bookmarksViewModel.entityAlreadyBookmarked(entity: armorSet)) {
+            return "bookmark.fill"
+        } else {
+            return "bookmark"
+        }
+    }
+    
     var body: some View {
         PagerTabStripView(selection: $selection) {
-            ArmorSetView(armorSet: armorSet, skills: skills, rarityColor: rarityColor)
+            ArmorSetView(armorSet: armorSet, allSkills: allSkills, rarityColor: rarityColor)
                 .pagerTabItem {
                     TitleNavBarItemWithText(title: "Set")
                 }
             ForEach(armorSet.armorPieces, id: \.self) { armorPiece in
-                ArmorPieceView(armorPiece: armorPiece, skills: skills, rarity: armorSet.rarity)
+                ArmorPieceView(armorPiece: armorPiece, allSkills: allSkills, rarity: armorSet.rarity)
                     .pagerTabItem {
                         TitleNavBarItemWithImage(imageName: "\(armorPiece.type.description)-rarity-1")
                     }
@@ -47,9 +57,11 @@ struct ArmorDetailView: View {
                     placement: ToolbarItemPlacement.navigationBarTrailing,
                     content: {
                         Button(
-                            action: {},
+                            action: {
+                                bookmarksViewModel.toggleBookmark(entity: armorSet)
+                            },
                             label: {
-                                Image(systemName: "bookmark")
+                                Image(systemName: isBookmarked)
                             }
                         )
                     }
@@ -60,6 +72,6 @@ struct ArmorDetailView: View {
 
 struct ArmorDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ArmorDetailView(armorSet: ArmorProvider.shared.armorSet, skills: SkillProvider.shared.skills)
+        ArmorDetailView(bookmarksViewModel: BookmarksViewModel(), armorSet: ArmorProvider.shared.armorSet, allSkills: SkillProvider.shared.skills)
     }
 }

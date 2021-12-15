@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ArmorRowView: View {
+    @ObservedObject var bookmarksViewModel: BookmarksViewModel
+    
     var armorSet: ArmorSet
-    var skills: [Skill]
+    var allSkills: [Skill]
     
     var rarityColor: String {
         switch armorSet.rarity {
@@ -26,7 +28,7 @@ struct ArmorRowView: View {
     }
     
     func getSkillName(id: Int) -> String {
-        guard let skill = skills.first(where: { $0.id == id }) else {
+        guard let skill = allSkills.first(where: { $0.id == id }) else {
             return ""
         }
         return skill.name
@@ -77,7 +79,7 @@ struct ArmorRowView: View {
     
     var body: some View {
         NavigationLink(
-            destination: ArmorDetailView(armorSet: armorSet, skills: skills)) {
+            destination: ArmorDetailView(bookmarksViewModel: bookmarksViewModel, armorSet: armorSet, allSkills: allSkills)) {
             ZStack {
                 HStack(spacing: 0) {
                     VStack(alignment: .leading, spacing: 3.5) {
@@ -90,7 +92,7 @@ struct ArmorRowView: View {
                                 .frame(width: 14, height: 14)
                             Text("\(armorSet.totalPhysicalDefense)")
                                 .font(.subheadline)
-                                .foregroundColor(.gray)
+                                .foregroundColor(Color(.label).opacity(0.75))
                         }
                     }
                     Spacer()
@@ -126,8 +128,6 @@ struct ArmorRowView: View {
 
 struct ArmorRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ArmorRowView(armorSet: ArmorProvider.shared.armorSet, skills: SkillProvider.shared.skills)
-            
-            
+        ArmorRowView(bookmarksViewModel: BookmarksViewModel(), armorSet: ArmorProvider.shared.armorSet, allSkills: SkillProvider.shared.skills)
     }
 }

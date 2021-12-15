@@ -46,4 +46,31 @@ enum WeaponType: Int, CustomStringConvertible, Codable {
             return "Bow"
         }
     }
+    
+    var abbrev: String {
+        switch self {
+        case .greatSword:
+            return "gs"
+        case .longSword:
+            return "ls"
+        case .swordAndShield:
+            return "sas"
+        case .dualBlades:
+            return "db"
+        case .hammer:
+            return "ham"
+        case .huntingHorn:
+            return "hh"
+        case .lance:
+            return "l"
+        case .gunlance:
+            return "gl"
+        case .lightBowgun:
+            return "lbg"
+        case .heavyBowgun:
+            return "hbg"
+        case .bow:
+            return "bow"
+        }
+    }
 }

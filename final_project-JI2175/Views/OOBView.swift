@@ -19,11 +19,6 @@ struct OOBView: View {
                 .foregroundColor(Color.purple)
             Spacer()
         }
-            .navigationBarTitle("What?")
-            .navigationBarTitleDisplayMode(.large)
-            .onTapGesture {
-                self.selection = 0
-            }
     }
 }
 

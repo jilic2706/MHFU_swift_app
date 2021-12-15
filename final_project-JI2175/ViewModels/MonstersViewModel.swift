@@ -15,6 +15,9 @@ final class MonstersViewModel: ObservableObject {
     
     init() {
         getData()
+        if(self.data.isEmpty) {
+            getDataFromLocalJSON()
+        }
     }
     
     func getData() {
@@ -34,5 +37,17 @@ final class MonstersViewModel: ObservableObject {
                     self.data = $0
                   })
             .store(in: &cancellable)
+    }
+    
+    func getDataFromLocalJSON() {
+        if let localJSONPath = Bundle.main.url(forResource: "Monsters", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: localJSONPath)
+                let dataFromJSON = try JSONDecoder().decode([Monster].self, from: data)
+                self.data = dataFromJSON
+            } catch {
+                print(error)
+            }
+        }
     }
 }

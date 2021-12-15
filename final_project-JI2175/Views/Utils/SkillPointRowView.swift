@@ -9,10 +9,10 @@ import SwiftUI
 
 struct SkillPointRowView: View {
     var skillPoint: SkillPoint
-    var skills: [Skill]
+    var allSkills: [Skill]
     
     func getSkill(id: Int) -> Skill? {
-        guard let skill = skills.first(where: { $0.id == id }) else {
+        guard let skill = allSkills.first(where: { $0.id == id }) else {
             return nil
         }
         return skill
@@ -37,6 +37,6 @@ struct SkillPointRowView: View {
 
 struct SkillPointRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillPointRowView(skillPoint: SkillPoint(skillId: 6001, skillQuantity: 15), skills: SkillProvider.shared.skills)
+        SkillPointRowView(skillPoint: SkillPoint(skillId: 6001, skillQuantity: 15), allSkills: SkillProvider.shared.skills)
     }
 }

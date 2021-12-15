@@ -20,7 +20,6 @@
 		092051ED276107C00019E1C3 /* WeaponType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092051EC276107C00019E1C3 /* WeaponType.swift */; };
 		092051EF276107D30019E1C3 /* MonsterSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092051EE276107D30019E1C3 /* MonsterSize.swift */; };
 		092051F1276107F50019E1C3 /* MonsterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092051F0276107F50019E1C3 /* MonsterType.swift */; };
-		092051F327610C050019E1C3 /* WeaponAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092051F227610C050019E1C3 /* WeaponAttribute.swift */; };
 		092051F8276111210019E1C3 /* ArmorPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092051F7276111210019E1C3 /* ArmorPiece.swift */; };
 		092051FA2761112E0019E1C3 /* ArmorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092051F92761112E0019E1C3 /* ArmorSet.swift */; };
 		092051FC2761115F0019E1C3 /* ArmorPieceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092051FB2761115F0019E1C3 /* ArmorPieceType.swift */; };
@@ -46,12 +45,14 @@
 		09DD89DF2763CC1600B08AA4 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89DE2763CC1600B08AA4 /* LocationDetailView.swift */; };
 		09DD89EF27643A6C00B08AA4 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */; };
 		7311B1392766769800E12A96 /* TitleNavBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311B1382766769800E12A96 /* TitleNavBarItems.swift */; };
-		7311B13D2766859300E12A96 /* ArmorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311B13C2766859300E12A96 /* ArmorProvider.swift */; };
-		7311B13F2766878100E12A96 /* SkillProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311B13E2766878100E12A96 /* SkillProvider.swift */; };
 		7311B1412766895E00E12A96 /* ArmorSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311B1402766895E00E12A96 /* ArmorSetView.swift */; };
 		7311B1432766899300E12A96 /* ArmorPieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311B1422766899300E12A96 /* ArmorPieceView.swift */; };
 		7311B145276693D900E12A96 /* SlotNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311B144276693D900E12A96 /* SlotNumberView.swift */; };
 		7311B1472766DC6700E12A96 /* ResistanceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7311B1462766DC6700E12A96 /* ResistanceRowView.swift */; };
+		732489252769529C00548C10 /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732489242769529C00548C10 /* BookmarkListView.swift */; };
+		73248927276952B400548C10 /* BookmarkRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73248926276952B400548C10 /* BookmarkRowView.swift */; };
+		7324893A276969A200548C10 /* Bookmark_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 732489352769699F00548C10 /* Bookmark_Widget.intentdefinition */; };
+		73248944276A1CCB00548C10 /* WeaponTypeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73248943276A1CCB00548C10 /* WeaponTypeListView.swift */; };
 		734EA28C276571CF00778CC6 /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 734EA28B276571CF00778CC6 /* PagerTabStripView */; };
 		734EA28F27657D0700778CC6 /* Skills.json in Resources */ = {isa = PBXBuildFile; fileRef = 734EA28E27657D0700778CC6 /* Skills.json */; };
 		734EA29127657D5600778CC6 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 734EA29027657D5600778CC6 /* Monsters.json */; };
@@ -60,6 +61,23 @@
 		734EA29A2765962F00778CC6 /* ArmorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EA2992765962F00778CC6 /* ArmorDetailView.swift */; };
 		734EA29C2765A06F00778CC6 /* ArmorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EA29B2765A06F00778CC6 /* ArmorListView.swift */; };
 		734EA29E2765A14300778CC6 /* ArmorRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EA29D2765A14300778CC6 /* ArmorRowView.swift */; };
+		73612D6C2768E90100E96704 /* BlademasterArmors.json in Resources */ = {isa = PBXBuildFile; fileRef = 73612D6B2768E90100E96704 /* BlademasterArmors.json */; };
+		73612D6E2768E92600E96704 /* GunnerArmors.json in Resources */ = {isa = PBXBuildFile; fileRef = 73612D6D2768E92600E96704 /* GunnerArmors.json */; };
+		73612D742768F65100E96704 /* ArmorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D732768F65100E96704 /* ArmorProvider.swift */; };
+		73612D762768F66200E96704 /* SkillProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D752768F66200E96704 /* SkillProvider.swift */; };
+		73612D782768F80800E96704 /* Weapons.json in Resources */ = {isa = PBXBuildFile; fileRef = 73612D772768F80800E96704 /* Weapons.json */; };
+		73612D7A2768F96A00E96704 /* WeaponAttributeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D792768F96A00E96704 /* WeaponAttributeType.swift */; };
+		73612D7C2768F99700E96704 /* SharpnessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D7B2768F99700E96704 /* SharpnessType.swift */; };
+		73612D7E2768F9C000E96704 /* Sharpness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D7D2768F9C000E96704 /* Sharpness.swift */; };
+		73612D812768FA7A00E96704 /* SharpnessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D802768FA7A00E96704 /* SharpnessBarView.swift */; };
+		73612D842768FED100E96704 /* WeaponTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D832768FED100E96704 /* WeaponTreeView.swift */; };
+		73612D862768FEE400E96704 /* WeaponDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D852768FEE400E96704 /* WeaponDetailView.swift */; };
+		73612D8A2768FF1900E96704 /* WeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D892768FF1900E96704 /* WeaponsViewModel.swift */; };
+		73612D8C2768FFAA00E96704 /* WeaponProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D8B2768FFAA00E96704 /* WeaponProvider.swift */; };
+		73612D8E2769034D00E96704 /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D8D2769034D00E96704 /* EdgeBorder.swift */; };
+		73612D902769071A00E96704 /* WeaponAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D8F2769071A00E96704 /* WeaponAttribute.swift */; };
+		73612D922769320100E96704 /* SharpnessLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D912769320100E96704 /* SharpnessLength.swift */; };
+		73612D9427693E9D00E96704 /* WeaponListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D9327693E9D00E96704 /* WeaponListView.swift */; };
 		7390CA9B2767553D005B7B74 /* GunnerArmorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7390CA9A2767553D005B7B74 /* GunnerArmorsViewModel.swift */; };
 		7390CA9D276759B0005B7B74 /* ArmorResistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7390CA9C276759B0005B7B74 /* ArmorResistance.swift */; };
 		73D4230C276769C100E98A29 /* MinimizedSkillPointRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4230B276769C100E98A29 /* MinimizedSkillPointRowView.swift */; };
@@ -69,8 +87,21 @@
 		73D4231F2767B33700E98A29 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4231E2767B33700E98A29 /* SideMenu.swift */; };
 		73D423232767B38D00E98A29 /* MenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D423222767B38D00E98A29 /* MenuContent.swift */; };
 		73D423272767CAAA00E98A29 /* OOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D423262767CAAA00E98A29 /* OOBView.swift */; };
-		73D4232B2767D29200E98A29 /* EntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4232A2767D29200E98A29 /* EntityViewModel.swift */; };
+		73D4232B2767D29200E98A29 /* BookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4232A2767D29200E98A29 /* BookmarksViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73248941276969A200548C10 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		092051C62760FA0B0019E1C3 /* final_project-JI2175.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final_project-JI2175.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +119,6 @@
 		092051EC276107C00019E1C3 /* WeaponType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponType.swift; sourceTree = "<group>"; };
 		092051EE276107D30019E1C3 /* MonsterSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterSize.swift; sourceTree = "<group>"; };
 		092051F0276107F50019E1C3 /* MonsterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterType.swift; sourceTree = "<group>"; };
-		092051F227610C050019E1C3 /* WeaponAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponAttribute.swift; sourceTree = "<group>"; };
 		092051F7276111210019E1C3 /* ArmorPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorPiece.swift; sourceTree = "<group>"; };
 		092051F92761112E0019E1C3 /* ArmorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorSet.swift; sourceTree = "<group>"; };
 		092051FB2761115F0019E1C3 /* ArmorPieceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorPieceType.swift; sourceTree = "<group>"; };
@@ -113,12 +143,20 @@
 		09DD89DE2763CC1600B08AA4 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		7311B1382766769800E12A96 /* TitleNavBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNavBarItems.swift; sourceTree = "<group>"; };
-		7311B13C2766859300E12A96 /* ArmorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorProvider.swift; sourceTree = "<group>"; };
-		7311B13E2766878100E12A96 /* SkillProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillProvider.swift; sourceTree = "<group>"; };
 		7311B1402766895E00E12A96 /* ArmorSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorSetView.swift; sourceTree = "<group>"; };
 		7311B1422766899300E12A96 /* ArmorPieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorPieceView.swift; sourceTree = "<group>"; };
 		7311B144276693D900E12A96 /* SlotNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotNumberView.swift; sourceTree = "<group>"; };
 		7311B1462766DC6700E12A96 /* ResistanceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistanceRowView.swift; sourceTree = "<group>"; };
+		732489242769529C00548C10 /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
+		73248926276952B400548C10 /* BookmarkRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRowView.swift; sourceTree = "<group>"; };
+		7324892E2769699F00548C10 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		732489302769699F00548C10 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		732489332769699F00548C10 /* Bookmark_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark_Widget.swift; sourceTree = "<group>"; };
+		732489352769699F00548C10 /* Bookmark_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Bookmark_Widget.intentdefinition; sourceTree = "<group>"; };
+		73248936276969A100548C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73248938276969A200548C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7324894227696D2E00548C10 /* Bookmark WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bookmark WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		73248943276A1CCB00548C10 /* WeaponTypeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTypeListView.swift; sourceTree = "<group>"; };
 		734EA28E27657D0700778CC6 /* Skills.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Skills.json; sourceTree = "<group>"; };
 		734EA29027657D5600778CC6 /* Monsters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Monsters.json; sourceTree = "<group>"; };
 		734EA29227657ECA00778CC6 /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
@@ -126,6 +164,23 @@
 		734EA2992765962F00778CC6 /* ArmorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorDetailView.swift; sourceTree = "<group>"; };
 		734EA29B2765A06F00778CC6 /* ArmorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorListView.swift; sourceTree = "<group>"; };
 		734EA29D2765A14300778CC6 /* ArmorRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorRowView.swift; sourceTree = "<group>"; };
+		73612D6B2768E90100E96704 /* BlademasterArmors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BlademasterArmors.json; sourceTree = "<group>"; };
+		73612D6D2768E92600E96704 /* GunnerArmors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GunnerArmors.json; sourceTree = "<group>"; };
+		73612D732768F65100E96704 /* ArmorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorProvider.swift; sourceTree = "<group>"; };
+		73612D752768F66200E96704 /* SkillProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillProvider.swift; sourceTree = "<group>"; };
+		73612D772768F80800E96704 /* Weapons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Weapons.json; sourceTree = "<group>"; };
+		73612D792768F96A00E96704 /* WeaponAttributeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponAttributeType.swift; sourceTree = "<group>"; };
+		73612D7B2768F99700E96704 /* SharpnessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpnessType.swift; sourceTree = "<group>"; };
+		73612D7D2768F9C000E96704 /* Sharpness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sharpness.swift; sourceTree = "<group>"; };
+		73612D802768FA7A00E96704 /* SharpnessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpnessBarView.swift; sourceTree = "<group>"; };
+		73612D832768FED100E96704 /* WeaponTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTreeView.swift; sourceTree = "<group>"; };
+		73612D852768FEE400E96704 /* WeaponDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailView.swift; sourceTree = "<group>"; };
+		73612D892768FF1900E96704 /* WeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsViewModel.swift; sourceTree = "<group>"; };
+		73612D8B2768FFAA00E96704 /* WeaponProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponProvider.swift; sourceTree = "<group>"; };
+		73612D8D2769034D00E96704 /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		73612D8F2769071A00E96704 /* WeaponAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponAttribute.swift; sourceTree = "<group>"; };
+		73612D912769320100E96704 /* SharpnessLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpnessLength.swift; sourceTree = "<group>"; };
+		73612D9327693E9D00E96704 /* WeaponListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListView.swift; sourceTree = "<group>"; };
 		7390CA9A2767553D005B7B74 /* GunnerArmorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunnerArmorsViewModel.swift; sourceTree = "<group>"; };
 		7390CA9C276759B0005B7B74 /* ArmorResistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorResistance.swift; sourceTree = "<group>"; };
 		73D4230B276769C100E98A29 /* MinimizedSkillPointRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizedSkillPointRowView.swift; sourceTree = "<group>"; };
@@ -135,7 +190,7 @@
 		73D4231E2767B33700E98A29 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		73D423222767B38D00E98A29 /* MenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContent.swift; sourceTree = "<group>"; };
 		73D423262767CAAA00E98A29 /* OOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOBView.swift; sourceTree = "<group>"; };
-		73D4232A2767D29200E98A29 /* EntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityViewModel.swift; sourceTree = "<group>"; };
+		73D4232A2767D29200E98A29 /* BookmarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +209,10 @@
 		092051BD2760FA0B0019E1C3 = {
 			isa = PBXGroup;
 			children = (
+				7324894227696D2E00548C10 /* Bookmark WidgetExtension.entitlements */,
 				092051C82760FA0B0019E1C3 /* final_project-JI2175 */,
+				732489322769699F00548C10 /* Bookmark Widget */,
+				7324892D2769699F00548C10 /* Frameworks */,
 				092051C72760FA0B0019E1C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,8 +228,9 @@
 		092051C82760FA0B0019E1C3 /* final_project-JI2175 */ = {
 			isa = PBXGroup;
 			children = (
+				73612D722768F63E00E96704 /* DataProviders */,
 				73D4230F27678C1300E98A29 /* Extensions */,
-				7311B13A2766856B00E12A96 /* DataProviders */,
+				7311B13A2766856B00E12A96 /* JSON */,
 				092051DA2760FA3B0019E1C3 /* Views */,
 				092051D92760FA350019E1C3 /* ViewModels */,
 				092051D82760FA2D0019E1C3 /* Models */,
@@ -214,13 +273,14 @@
 		092051D92760FA350019E1C3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */,
+				73D4232A2767D29200E98A29 /* BookmarksViewModel.swift */,
 				09DD89CE2763ACB100B08AA4 /* MonstersViewModel.swift */,
-				09DD89D02763C14800B08AA4 /* LocationsViewModel.swift */,
-				092EE7DE276559DD001CF3DF /* SkillsViewModel.swift */,
+				73612D892768FF1900E96704 /* WeaponsViewModel.swift */,
 				734EA29627658F5100778CC6 /* BlademasterArmorsViewModel.swift */,
 				7390CA9A2767553D005B7B74 /* GunnerArmorsViewModel.swift */,
-				73D4232A2767D29200E98A29 /* EntityViewModel.swift */,
+				092EE7DE276559DD001CF3DF /* SkillsViewModel.swift */,
+				09DD89D02763C14800B08AA4 /* LocationsViewModel.swift */,
+				09DD89EE27643A6C00B08AA4 /* MenuViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -228,11 +288,13 @@
 		092051DA2760FA3B0019E1C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				732489232769528C00548C10 /* Bookmark */,
+				09DD89D62763CB7000B08AA4 /* Monster */,
+				73612D822768FE7400E96704 /* Weapon */,
 				734EA2982765961600778CC6 /* Armor */,
 				092EE7E0276560DD001CF3DF /* Skill */,
-				09DD89E8276426BE00B08AA4 /* Utils */,
 				09DD89D72763CB8000B08AA4 /* Location */,
-				09DD89D62763CB7000B08AA4 /* Monster */,
+				09DD89E8276426BE00B08AA4 /* Utils */,
 				73D423262767CAAA00E98A29 /* OOBView.swift */,
 			);
 			path = Views;
@@ -245,10 +307,12 @@
 				092051EC276107C00019E1C3 /* WeaponType.swift */,
 				092051EE276107D30019E1C3 /* MonsterSize.swift */,
 				092051F0276107F50019E1C3 /* MonsterType.swift */,
-				092051F227610C050019E1C3 /* WeaponAttribute.swift */,
 				092051FB2761115F0019E1C3 /* ArmorPieceType.swift */,
 				7390CA9C276759B0005B7B74 /* ArmorResistance.swift */,
 				73D4231227678C5100E98A29 /* ViewVisibility.swift */,
+				73612D792768F96A00E96704 /* WeaponAttributeType.swift */,
+				73612D7B2768F99700E96704 /* SharpnessType.swift */,
+				73612D912769320100E96704 /* SharpnessLength.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -259,6 +323,9 @@
 				09205205276161F00019E1C3 /* SkillPoint.swift */,
 				092052032761615F0019E1C3 /* Material.swift */,
 				092EE7DC27655950001CF3DF /* SkillEffect.swift */,
+				73612D7D2768F9C000E96704 /* Sharpness.swift */,
+				73612D8D2769034D00E96704 /* EdgeBorder.swift */,
+				73612D8F2769071A00E96704 /* WeaponAttribute.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -303,28 +370,51 @@
 				7311B1462766DC6700E12A96 /* ResistanceRowView.swift */,
 				73D4230B276769C100E98A29 /* MinimizedSkillPointRowView.swift */,
 				73D4230D27676B6700E98A29 /* SkillPointRowView.swift */,
+				73612D802768FA7A00E96704 /* SharpnessBarView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		7311B13A2766856B00E12A96 /* DataProviders */ = {
-			isa = PBXGroup;
-			children = (
-				7311B13B2766857700E12A96 /* JSON */,
-				7311B13C2766859300E12A96 /* ArmorProvider.swift */,
-				7311B13E2766878100E12A96 /* SkillProvider.swift */,
-			);
-			path = DataProviders;
-			sourceTree = "<group>";
-		};
-		7311B13B2766857700E12A96 /* JSON */ = {
+		7311B13A2766856B00E12A96 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				734EA28E27657D0700778CC6 /* Skills.json */,
 				734EA29027657D5600778CC6 /* Monsters.json */,
 				734EA29227657ECA00778CC6 /* Locations.json */,
+				73612D6B2768E90100E96704 /* BlademasterArmors.json */,
+				73612D6D2768E92600E96704 /* GunnerArmors.json */,
+				73612D772768F80800E96704 /* Weapons.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		732489232769528C00548C10 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				732489242769529C00548C10 /* BookmarkListView.swift */,
+				73248926276952B400548C10 /* BookmarkRowView.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		7324892D2769699F00548C10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7324892E2769699F00548C10 /* WidgetKit.framework */,
+				732489302769699F00548C10 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		732489322769699F00548C10 /* Bookmark Widget */ = {
+			isa = PBXGroup;
+			children = (
+				732489332769699F00548C10 /* Bookmark_Widget.swift */,
+				732489352769699F00548C10 /* Bookmark_Widget.intentdefinition */,
+				73248936276969A100548C10 /* Assets.xcassets */,
+				73248938276969A200548C10 /* Info.plist */,
+			);
+			path = "Bookmark Widget";
 			sourceTree = "<group>";
 		};
 		734EA2982765961600778CC6 /* Armor */ = {
@@ -337,6 +427,27 @@
 				7311B1422766899300E12A96 /* ArmorPieceView.swift */,
 			);
 			path = Armor;
+			sourceTree = "<group>";
+		};
+		73612D722768F63E00E96704 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				73612D732768F65100E96704 /* ArmorProvider.swift */,
+				73612D752768F66200E96704 /* SkillProvider.swift */,
+				73612D8B2768FFAA00E96704 /* WeaponProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		73612D822768FE7400E96704 /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+				73612D832768FED100E96704 /* WeaponTreeView.swift */,
+				73612D852768FEE400E96704 /* WeaponDetailView.swift */,
+				73612D9327693E9D00E96704 /* WeaponListView.swift */,
+				73248943276A1CCB00548C10 /* WeaponTypeListView.swift */,
+			);
+			path = Weapon;
 			sourceTree = "<group>";
 		};
 		73D4230F27678C1300E98A29 /* Extensions */ = {
@@ -366,6 +477,7 @@
 				092051C22760FA0B0019E1C3 /* Sources */,
 				092051C32760FA0B0019E1C3 /* Frameworks */,
 				092051C42760FA0B0019E1C3 /* Resources */,
+				73248941276969A200548C10 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -386,7 +498,7 @@
 		092051BE2760FA0B0019E1C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					092051C52760FA0B0019E1C3 = {
@@ -421,9 +533,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73612D6C2768E90100E96704 /* BlademasterArmors.json in Resources */,
+				73612D782768F80800E96704 /* Weapons.json in Resources */,
 				734EA29127657D5600778CC6 /* Monsters.json in Resources */,
 				734EA28F27657D0700778CC6 /* Skills.json in Resources */,
 				734EA29327657ECA00778CC6 /* Locations.json in Resources */,
+				73612D6E2768E92600E96704 /* GunnerArmors.json in Resources */,
 				092051D12760FA0D0019E1C3 /* Preview Assets.xcassets in Resources */,
 				092051CE2760FA0D0019E1C3 /* Assets.xcassets in Resources */,
 			);
@@ -437,34 +552,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D4230C276769C100E98A29 /* MinimizedSkillPointRowView.swift in Sources */,
+				73612D9427693E9D00E96704 /* WeaponListView.swift in Sources */,
+				73612D8C2768FFAA00E96704 /* WeaponProvider.swift in Sources */,
 				092052042761615F0019E1C3 /* Material.swift in Sources */,
 				73D4230E27676B6700E98A29 /* SkillPointRowView.swift in Sources */,
 				092EE7E6276561D6001CF3DF /* SkillDetailView.swift in Sources */,
 				092051E02760FC5A0019E1C3 /* Monster.swift in Sources */,
-				092051F327610C050019E1C3 /* WeaponAttribute.swift in Sources */,
 				092EE7E4276561A0001CF3DF /* SkillRowView.swift in Sources */,
 				092EE7E2276560ED001CF3DF /* SkillListView.swift in Sources */,
-				7311B13D2766859300E12A96 /* ArmorProvider.swift in Sources */,
 				09DD89D12763C14800B08AA4 /* LocationsViewModel.swift in Sources */,
+				73612D7E2768F9C000E96704 /* Sharpness.swift in Sources */,
 				092051E8276106D90019E1C3 /* Item.swift in Sources */,
 				73D423272767CAAA00E98A29 /* OOBView.swift in Sources */,
-				7311B13F2766878100E12A96 /* SkillProvider.swift in Sources */,
 				73D423232767B38D00E98A29 /* MenuContent.swift in Sources */,
 				09DD89CF2763ACB100B08AA4 /* MonstersViewModel.swift in Sources */,
 				092051F1276107F50019E1C3 /* MonsterType.swift in Sources */,
 				73D4231127678C2800E98A29 /* ViewExtensions.swift in Sources */,
 				734EA29727658F5100778CC6 /* BlademasterArmorsViewModel.swift in Sources */,
 				092051FE276113200019E1C3 /* Skill.swift in Sources */,
+				73612D902769071A00E96704 /* WeaponAttribute.swift in Sources */,
+				73612D742768F65100E96704 /* ArmorProvider.swift in Sources */,
 				7311B1432766899300E12A96 /* ArmorPieceView.swift in Sources */,
 				7311B1392766769800E12A96 /* TitleNavBarItems.swift in Sources */,
 				092051CC2760FA0B0019E1C3 /* ContentView.swift in Sources */,
-				73D4232B2767D29200E98A29 /* EntityViewModel.swift in Sources */,
+				73D4232B2767D29200E98A29 /* BookmarksViewModel.swift in Sources */,
 				092051ED276107C00019E1C3 /* WeaponType.swift in Sources */,
+				73612D812768FA7A00E96704 /* SharpnessBarView.swift in Sources */,
+				73612D862768FEE400E96704 /* WeaponDetailView.swift in Sources */,
+				73612D8A2768FF1900E96704 /* WeaponsViewModel.swift in Sources */,
 				09205202276125810019E1C3 /* Decoration.swift in Sources */,
 				09205206276161F00019E1C3 /* SkillPoint.swift in Sources */,
 				0962970D276229CA00123630 /* MonsterRowView.swift in Sources */,
 				7311B145276693D900E12A96 /* SlotNumberView.swift in Sources */,
+				73248944276A1CCB00548C10 /* WeaponTypeListView.swift in Sources */,
 				092051E6276100F40019E1C3 /* Location.swift in Sources */,
+				732489252769529C00548C10 /* BookmarkListView.swift in Sources */,
 				092EE7E827656F09001CF3DF /* SectionTitleView.swift in Sources */,
 				734EA29C2765A06F00778CC6 /* ArmorListView.swift in Sources */,
 				092EE7DF276559DD001CF3DF /* SkillsViewModel.swift in Sources */,
@@ -472,19 +594,26 @@
 				7311B1412766895E00E12A96 /* ArmorSetView.swift in Sources */,
 				092EE7DD27655950001CF3DF /* SkillEffect.swift in Sources */,
 				09DD89DF2763CC1600B08AA4 /* LocationDetailView.swift in Sources */,
+				7324893A276969A200548C10 /* Bookmark_Widget.intentdefinition in Sources */,
 				092051FC2761115F0019E1C3 /* ArmorPieceType.swift in Sources */,
 				092051CA2760FA0B0019E1C3 /* final_project_JI2175App.swift in Sources */,
+				73612D842768FED100E96704 /* WeaponTreeView.swift in Sources */,
 				092051EA2761078A0019E1C3 /* Weapon.swift in Sources */,
 				092051DE2760FA930019E1C3 /* EntityType.swift in Sources */,
+				73612D922769320100E96704 /* SharpnessLength.swift in Sources */,
 				7311B1472766DC6700E12A96 /* ResistanceRowView.swift in Sources */,
+				73612D8E2769034D00E96704 /* EdgeBorder.swift in Sources */,
+				73612D762768F66200E96704 /* SkillProvider.swift in Sources */,
 				092051EF276107D30019E1C3 /* MonsterSize.swift in Sources */,
 				092051F8276111210019E1C3 /* ArmorPiece.swift in Sources */,
 				09DD89DD2763CC0900B08AA4 /* LocationRowView.swift in Sources */,
 				092052002761241C0019E1C3 /* Quest.swift in Sources */,
 				0962970B2762275A00123630 /* MonsterListView.swift in Sources */,
 				7390CA9D276759B0005B7B74 /* ArmorResistance.swift in Sources */,
+				73612D7C2768F99700E96704 /* SharpnessType.swift in Sources */,
 				734EA29E2765A14300778CC6 /* ArmorRowView.swift in Sources */,
 				73D4231F2767B33700E98A29 /* SideMenu.swift in Sources */,
+				73612D7A2768F96A00E96704 /* WeaponAttributeType.swift in Sources */,
 				73D4231327678C5100E98A29 /* ViewVisibility.swift in Sources */,
 				09DD89DB2763CBFC00B08AA4 /* LocationListView.swift in Sources */,
 				7390CA9B2767553D005B7B74 /* GunnerArmorsViewModel.swift in Sources */,
@@ -492,6 +621,7 @@
 				092051DC2760FA4D0019E1C3 /* Entity.swift in Sources */,
 				09629712276239A000123630 /* MonsterDetailView.swift in Sources */,
 				734EA29A2765962F00778CC6 /* ArmorDetailView.swift in Sources */,
+				73248927276952B400548C10 /* BookmarkRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +747,7 @@
 		092051D62760FA0D0019E1C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -638,6 +769,7 @@
 		092051D72760FA0D0019E1C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

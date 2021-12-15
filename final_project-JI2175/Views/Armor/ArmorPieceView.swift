@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ArmorPieceView: View {
     var armorPiece: ArmorPiece
-    var skills: [Skill]
+    var allSkills: [Skill]
     var rarity: Int
     
     func getSkillName(id: Int) -> String {
-        guard let skill = skills.first(where: { $0.id == id }) else {
+        guard let skill = allSkills.first(where: { $0.id == id }) else {
             return ""
         }
         return skill.name
@@ -78,7 +78,7 @@ struct ArmorPieceView: View {
                 SectionTitleView(sectionLabel: "Skills")
                 VStack(alignment: .trailing, spacing: 3.5) {
                     ForEach(armorPiece.skillPoints, id: \.self) { skillPoint in
-                        SkillPointRowView(skillPoint: skillPoint, skills: skills)
+                        SkillPointRowView(skillPoint: skillPoint, allSkills: allSkills)
                     }
                 }
             }
@@ -88,7 +88,7 @@ struct ArmorPieceView: View {
 
 struct ArmorPieceView_Previews: PreviewProvider {
     static var previews: some View {
-        ArmorPieceView(armorPiece: ArmorProvider.shared.armorSet.armorPieces[0], skills: SkillProvider.shared.skills, rarity: 10)
+        ArmorPieceView(armorPiece: ArmorProvider.shared.armorSet.armorPieces[0], allSkills: SkillProvider.shared.skills, rarity: 10)
             .preferredColorScheme(.light)
     }
 }

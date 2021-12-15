@@ -10,45 +10,29 @@ import SwiftUI
 struct LocationListView: View {
     @Binding var menuOpened: Bool
     
-    @ObservedObject var bookmarkViewModel: EntityViewModel
-    @ObservedObject var locationsViewModel: LocationsViewModel
+    @ObservedObject var bookmarksViewModel: BookmarksViewModel
+    @ObservedObject var viewModel: LocationsViewModel
     
     var locations: [Location] {
-        return locationsViewModel.data
+        return viewModel.data
     }
     
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading) {
                 ForEach(locations) { location in
-                    LocationRowView(bookmarkViewModel: bookmarkViewModel, location: location)
+                    LocationRowView(bookmarksViewModel: bookmarksViewModel, location: location)
                         .padding(.horizontal)
                     Divider()
                         .background(Color("ModeDependantGray"))
                 }
             }
         }
-            .navigationBarTitle("Locations", displayMode: .inline)
-            .toolbar {
-                ToolbarItem(
-                    placement: ToolbarItemPlacement.navigationBarLeading,
-                    content: {
-                        Button(
-                            action: {
-                                self.menuOpened.toggle()
-                            },
-                            label: {
-                                Image(systemName: "list.dash")
-                            }
-                        )
-                    }
-                )
-            }
     }
 }
 
-//struct LocationListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LocationListView(menuOpened: .constant(false))
-//    }
-//}
+struct LocationListView_Previews: PreviewProvider {
+    static var previews: some View {
+        LocationListView(menuOpened: .constant(false), bookmarksViewModel: BookmarksViewModel(), viewModel: LocationsViewModel())
+    }
+}

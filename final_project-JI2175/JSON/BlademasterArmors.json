@@ -1,0 +1,1005 @@
+[
+  {
+    "id": 3001,
+    "name": "Mafumofu",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 1,
+    "armor_pieces": [
+      {
+        "name": "Mafumofu Hood",
+        "description": "Special product of Pokke. The intense cold of the mountains is not a problem.",
+        "armor_type": 1,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 0,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          },
+          {
+            "skill_id": 6081,
+            "skill_quantity": 3
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Jacket",
+        "description": "Special product of Pokke. The fluffy feeling makes you want to wear it everywhere.",
+        "armor_type": 2,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 0,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6068,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Mittens",
+        "description": "Special product of Pokke. These thick mittens are famed for their ease of use.",
+        "armor_type": 3,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6010,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Coat",
+        "description": "Special product of Pokke. Its warmth and fluffiness are absolutely lovely.",
+        "armor_type": 4,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6073,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      },
+      {
+        "name": "Mafumofu Boots",
+        "description": "Special product of Pokke. Retains heat and allows for easy movement in the snow.",
+        "armor_type": 5,
+        "physical_defense": 1,
+        "fire_defense": 0,
+        "water_defense": 0,
+        "thunder_defense": 0,
+        "ice_defense": 3,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6052,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6068,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6071,
+            "skill_quantity": -2
+          },
+          {
+            "skill_id": 6072,
+            "skill_quantity": 4
+          }
+        ],
+        "crafting_cost": 50
+      }
+    ]
+  },
+  {
+    "id": 3002,
+    "name": "Chrome Metal",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 3,
+    "armor_pieces": [
+      {
+        "name": "Chrome Metal Coat",
+        "description": "Made from smooth and brilliantly polished alloy. A beautiful piece indeed.",
+        "armor_type": 4,
+        "physical_defense": 24,
+        "fire_defense": 2,
+        "water_defense": -2,
+        "thunder_defense": 0,
+        "ice_defense": 0,
+        "dragon_defense": 0,
+        "slots": 0,
+        "skill_points": [
+          {
+            "skill_id": 6100,
+            "skill_quantity": 1
+          }
+        ],
+        "crafting_cost": 7260
+      },
+      {
+        "name": "Chrome Metal Boots",
+        "description": "A smooth and brilliantly polished alloy. Shines like a star in the dark sky.",
+        "armor_type": 5,
+        "physical_defense": 24,
+        "fire_defense": 2,
+        "water_defense": -2,
+        "thunder_defense": 0,
+        "ice_defense": 0,
+        "dragon_defense": 0,
+        "slots": 0,
+        "skill_points": [
+          {
+            "skill_id": 6100,
+            "skill_quantity": 1
+          }
+        ],
+        "crafting_cost": 7260
+      }
+    ]
+  },
+  {
+    "id": 3003,
+    "name": "Diablo D",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 4,
+    "armor_pieces": [
+      {
+        "name": "Diablo Helm D",
+        "description": "Helm that carries a Diablos' symbol - its horn. Proves one to be a desert champion.",
+        "armor_type": 1,
+        "physical_defense": 38,
+        "fire_defense": 3,
+        "water_defense": -1,
+        "thunder_defense": 1,
+        "ice_defense": -2,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -1
+          },
+          {
+            "skill_id": 6054,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6079,
+            "skill_quantity": -3
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Diablo Mail D",
+        "description": "Mail made from Diablos materials. Terrific strength that proves desert valor.",
+        "armor_type": 2,
+        "physical_defense": 38,
+        "fire_defense": 3,
+        "water_defense": -1,
+        "thunder_defense": 1,
+        "ice_defense": -2,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -1
+          },
+          {
+            "skill_id": 6054,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6079,
+            "skill_quantity": -1
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Diablo Vambraces D",
+        "description": "Thick shell with unequaled hardness. Put it on and feel the weight of courage",
+        "armor_type": 3,
+        "physical_defense": 38,
+        "fire_defense": 3,
+        "water_defense": -1,
+        "thunder_defense": 1,
+        "ice_defense": -2,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -1
+          },
+          {
+            "skill_id": 6054,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6079,
+            "skill_quantity": -1
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Diablo Coil D",
+        "description": "Coil made from Diablos material. Power that fears no wyvern's attack.",
+        "armor_type": 4,
+        "physical_defense": 38,
+        "fire_defense": 3,
+        "water_defense": -1,
+        "thunder_defense": 1,
+        "ice_defense": -2,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -1
+          },
+          {
+            "skill_id": 6054,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6079,
+            "skill_quantity": -1
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Diablo Greaves D",
+        "description": "Greaves crafted from Diablos materials. Glorious armor with truly heroic strength.",
+        "armor_type": 5,
+        "physical_defense": 38,
+        "fire_defense": 3,
+        "water_defense": -1,
+        "thunder_defense": 1,
+        "ice_defense": -2,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -1
+          },
+          {
+            "skill_id": 6054,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6079,
+            "skill_quantity": -1
+          }
+        ],
+        "crafting_cost": 5800
+      }
+    ]
+  },
+  {
+    "id": 3004,
+    "name": "Death Stench",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 5,
+    "armor_pieces": [
+      {
+        "name": "Death Stench Brain",
+        "description": "Said to take one to the netherworld. You can hear the agony of the dead...",
+        "armor_type": 1,
+        "physical_defense": 40,
+        "fire_defense": 2,
+        "water_defense": 1,
+        "thunder_defense": 0,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6011,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6012,
+            "skill_quantity": -3
+          },
+          {
+            "skill_id": 6014,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Death Stench Muscle",
+        "description": "Armor that carries one to death. Otherworldly light adn always incredibly cold.",
+        "armor_type": 2,
+        "physical_defense": 40,
+        "fire_defense": 2,
+        "water_defense": 1,
+        "thunder_defense": 0,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6011,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6012,
+            "skill_quantity": -3
+          },
+          {
+            "skill_id": 6014,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Death Stench Grip",
+        "description": "Armor drenched in the stench of decay. It feels as if the god of death resides within.",
+        "armor_type": 3,
+        "physical_defense": 40,
+        "fire_defense": 2,
+        "water_defense": 1,
+        "thunder_defense": 0,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6011,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6012,
+            "skill_quantity": -5
+          },
+          {
+            "skill_id": 6014,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Death Stench Grip",
+        "description": "Armor housing the stench of decay. It feels like Death's eyes are fixed upon you.",
+        "armor_type": 4,
+        "physical_defense": 40,
+        "fire_defense": 2,
+        "water_defense": 1,
+        "thunder_defense": 0,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6011,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6012,
+            "skill_quantity": -5
+          },
+          {
+            "skill_id": 6014,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 5800
+      },
+      {
+        "name": "Death Stench Heel",
+        "description": "Modeled on the god of death. Hearing the black footsteps means your time has come.",
+        "armor_type": 4,
+        "physical_defense": 40,
+        "fire_defense": 2,
+        "water_defense": 1,
+        "thunder_defense": 0,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6011,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6012,
+            "skill_quantity": -5
+          },
+          {
+            "skill_id": 6014,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 5800
+      }
+    ]
+  },
+  {
+    "id": 3005,
+    "name": "Felyne",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 5,
+    "armor_pieces": [
+      {
+        "name": "Felyne Mask",
+        "description": "Armor made to appear like a Felyne head. A famously adorable(?) item.",
+        "armor_type": 1,
+        "physical_defense": 4,
+        "fire_defense": 2,
+        "water_defense": 2,
+        "thunder_defense": 2,
+        "ice_defense": 0,
+        "dragon_defense": 2,
+        "slots": 0,
+        "skill_points": [
+          {
+            "skill_id": 6044,
+            "skill_quantity": 10
+          },
+          {
+            "skill_id": 6060,
+            "skill_quantity": 1
+          }
+        ],
+        "crafting_cost": 1150
+      }
+    ]
+  },
+  {
+    "id": 3006,
+    "name": "Ceanataur S",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 6,
+    "armor_pieces": [
+      {
+        "name": "Ceanataur Helm S",
+        "description": "Made from Shogun Ceanataur materials. Protection sharp enough to cut steel.",
+        "armor_type": 1,
+        "physical_defense": 61,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6013,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6019,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Mail S",
+        "description": "Made from the strong blade of a Shogun. Those who touch it won't be unscathed.",
+        "armor_type": 2,
+        "physical_defense": 61,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 1,
+        "skill_points": [
+          {
+            "skill_id": 6013,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6019,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Braces S",
+        "description": "Made of Shogun Ceanataur. The sharp blades provide an extra ounce of damage.",
+        "armor_type": 3,
+        "physical_defense": 61,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6013,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6019,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Tasset S",
+        "description": "The hard shell of a Shogun Ceanataur. Its blades are still intact, so beware!",
+        "armor_type": 4,
+        "physical_defense": 61,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6013,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6019,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Greaves S",
+        "description": "Made of Shogun Ceanataur materials. It represents the latest in technology.",
+        "armor_type": 5,
+        "physical_defense": 61,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6013,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6019,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 10050
+      }
+    ]
+  },
+  {
+    "id": 3007,
+    "name": "Ceanataur U",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 7,
+    "armor_pieces": [
+      {
+        "name": "Ceanataur Helm U",
+        "description": "Made from Shogun Ceanataur materials. Protection sharp enough to cut steel.",
+        "armor_type": 1,
+        "physical_defense": 59,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6012,
+            "skill_quantity": -3
+          },
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6018,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Mail U",
+        "description": "Made from the strong blade of a Shogun. Those who touch it won't be unscathed.",
+        "armor_type": 2,
+        "physical_defense": 59,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6012,
+            "skill_quantity": -1
+          },
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6018,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Braces U",
+        "description": "Made of Shogun Ceanataur. The sharp blades provide an extra ounce of damage.",
+        "armor_type": 3,
+        "physical_defense": 59,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 3,
+        "skill_points": [
+          {
+            "skill_id": 6012,
+            "skill_quantity": -1
+          },
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6018,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Tasset U",
+        "description": "The hard shell of a Shogun Ceanataur. Its blades are still intact, so beware!",
+        "armor_type": 4,
+        "physical_defense": 59,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6012,
+            "skill_quantity": -3
+          },
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6018,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 10050
+      },
+      {
+        "name": "Ceanataur Greaves U",
+        "description": "Made of Shogun Ceanataur materials. It represents the latest in technology.",
+        "armor_type": 5,
+        "physical_defense": 59,
+        "fire_defense": 1,
+        "water_defense": 2,
+        "thunder_defense": -1,
+        "ice_defense": -1,
+        "dragon_defense": 0,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6012,
+            "skill_quantity": -3
+          },
+          {
+            "skill_id": 6015,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6018,
+            "skill_quantity": 2
+          }
+        ],
+        "crafting_cost": 10050
+      }
+    ]
+  },
+  {
+    "id": 3010,
+    "name": "Silver Sol Z",
+    "description": "",
+    "entity_type": 3,
+    "rarity": 10,
+    "armor_pieces": [
+      {
+        "name": "Silver Sol Helm Z",
+        "description": "Silver Rathalos Helm. Metal brilliant as ice, violent power like a raging inferno.",
+        "armor_type": 1,
+        "physical_defense": 98,
+        "fire_defense": 2,
+        "water_defense": -1,
+        "thunder_defense": -1,
+        "ice_defense": 0,
+        "dragon_defense": 1,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6014,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 4
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 24500
+      },
+      {
+        "name": "Silver Sol Mail Z",
+        "description": "Radiates with a Silver Sun's frozen flames. Freezes attacks before they land.",
+        "armor_type": 2,
+        "physical_defense": 98,
+        "fire_defense": 2,
+        "water_defense": -1,
+        "thunder_defense": -1,
+        "ice_defense": 0,
+        "dragon_defense": 1,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6014,
+            "skill_quantity": 2
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 24500
+      },
+      {
+        "name": "Silver Sol Vambraces Z",
+        "description": "Contains the soul of a Silver Rathalos, who roams the skies like lightning.",
+        "armor_type": 3,
+        "physical_defense": 98,
+        "fire_defense": 2,
+        "water_defense": -1,
+        "thunder_defense": -1,
+        "ice_defense": 0,
+        "dragon_defense": 1,
+        "slots": 2,
+        "skill_points": [
+          {
+            "skill_id": 6014,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 4
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -2
+          }
+        ],
+        "crafting_cost": 24500
+      },
+      {
+        "name": "Silver Sol Coil Z",
+        "description": "Completely and utterly flawless. There are no other words to describe this.",
+        "armor_type": 4,
+        "physical_defense": 98,
+        "fire_defense": 2,
+        "water_defense": -1,
+        "thunder_defense": -1,
+        "ice_defense": 0,
+        "dragon_defense": 1,
+        "slots": 3,
+        "skill_points": [
+          {
+            "skill_id": 6014,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -3
+          }
+        ],
+        "crafting_cost": 24500
+      },
+      {
+        "name": "Silver Sol Greaves Z",
+        "description": "Elegant greaves tinged with a never-ending glow like the afterglow of a miracle.",
+        "armor_type": 5,
+        "physical_defense": 98,
+        "fire_defense": 2,
+        "water_defense": -1,
+        "thunder_defense": -1,
+        "ice_defense": 0,
+        "dragon_defense": 1,
+        "slots": 3,
+        "skill_points": [
+          {
+            "skill_id": 6014,
+            "skill_quantity": 1
+          },
+          {
+            "skill_id": 6001,
+            "skill_quantity": 3
+          },
+          {
+            "skill_id": 6002,
+            "skill_quantity": -3
+          }
+        ],
+        "crafting_cost": 24500
+      }
+    ]
+  }
+]
