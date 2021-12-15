@@ -50,7 +50,7 @@ struct MonsterDetailView: View {
                         .background(Color("ModeDependantGray"))
                     KFImage(monster.icon)
                         .resizable()
-                        .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.3)
+                        .aspectRatio(contentMode: .fit)
                         .padding()
                     Divider()
                         .background(Color("ModeDependantGray"))

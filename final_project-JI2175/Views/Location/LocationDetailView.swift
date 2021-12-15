@@ -36,25 +36,26 @@ struct LocationDetailView: View {
             if(locationMaps.count < 2) {
                 KFImage(locationMaps[0])
                     .resizable()
-                    .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.45)
+                    .aspectRatio(contentMode: .fit)
             } else {
                 TabView {
                     HStack(alignment: .center, spacing: 0) {
                         KFImage(locationMaps[0])
                             .resizable()
-                            .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.45)
+                            .aspectRatio(contentMode: .fit)
                         Image(systemName: "chevron.right")
                     }
                     HStack(alignment: .center, spacing: 0) {
                         Image(systemName: "chevron.left")
                         KFImage(locationMaps[1])
                             .resizable()
-                            .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.45)
+                            .aspectRatio(contentMode: .fit)
                     }
                 }.tabViewStyle(PageTabViewStyle())
             }
             Spacer()
         }
+            .padding()
             .navigationBarTitle(location.name, displayMode: .inline)
             .toolbar {
                 ToolbarItem(

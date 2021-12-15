@@ -89,7 +89,7 @@ struct ContentView: View {
                     } else if(selection == 7) {
                         LocationListView(menuOpened: $menuOpened, bookmarksViewModel: bookmarksViewModel, viewModel: locationsViewModel)
                     } else if(selection == 8) {
-                        BookmarkListView(menuOpened: $menuOpened, bookmarksViewModel: bookmarksViewModel, allSkills: allSkills, allLocations: allLocations)
+                        BookmarkListView(menuOpened: $menuOpened, bookmarksViewModel: bookmarksViewModel, allWeapons: allWeapons, allSkills: allSkills, allLocations: allLocations)
                     }
                     else {
                         OOBView(selection: $selection)

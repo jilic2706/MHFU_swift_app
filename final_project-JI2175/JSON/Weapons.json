@@ -216,7 +216,7 @@
         }
     ],
     "parents": [
-        10012
+        1002
     ],
     "children": [
         1005,
@@ -635,6 +635,82 @@
         {
           "sharpness_type": "purple",
           "sharpness_value": 2
+        }
+    ],
+    "parents": [],
+    "children": []
+  },
+  {
+    "id": 9003,
+    "name": "EternalAnnihilator G",
+    "description": "Crafted through the newest techniques, its shape is the same, but now it's G-Level.",
+    "entity_type": 2,
+    "rarity": 10,
+    "type": 1,
+    "attack": 1104,
+    "attribute": [
+        {
+          "attribute_type": "dragon",
+          "attribute_value": 520
+        }
+    ],
+    "affinity": 0,
+    "slots": 0,
+    "defense": 0,
+    "regular_sharpness": [
+        {
+          "sharpness_type": "red",
+          "sharpness_value": 5
+        },
+        {
+          "sharpness_type": "orange",
+          "sharpness_value": 0
+        },
+        {
+          "sharpness_type": "yellow",
+          "sharpness_value": 2
+        },
+        {
+          "sharpness_type": "green",
+          "sharpness_value": 4
+        },
+        {
+          "sharpness_type": "blue",
+          "sharpness_value": 2
+        },
+        {
+          "sharpness_type": "white",
+          "sharpness_value": 2
+        },
+    ],
+    "s+1_sharpness": [
+        {
+          "sharpness_type": "red",
+          "sharpness_value": 5
+        },
+        {
+          "sharpness_type": "orange",
+          "sharpness_value": 0
+        },
+        {
+          "sharpness_type": "yellow",
+          "sharpness_value": 2
+        },
+        {
+          "sharpness_type": "green",
+          "sharpness_value": 4
+        },
+        {
+          "sharpness_type": "blue",
+          "sharpness_value": 2
+        },
+        {
+          "sharpness_type": "white",
+          "sharpness_value": 3
+        },
+        {
+          "sharpness_type": "purple",
+          "sharpness_value": 1
         }
     ],
     "parents": [],

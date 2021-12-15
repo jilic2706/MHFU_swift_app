@@ -19,7 +19,17 @@ struct MenuContent: View {
             VStack(alignment: .leading, spacing: 0) {
                 ForEach(MenuViewModel.allCases, id: \.self) { menuItem in
                     if(menuItem.menuSelection == 8) {
-                        Divider()
+                        VStack(alignment: .leading) {
+                            Divider()
+                                .background(Color("ModeDependantGray"))
+                                .padding(.vertical, 21)
+                            Text("OTHER")
+                                .font(.caption)
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color.black.opacity(0.5))
+                                .padding(.bottom, 14)
+                                .padding(.leading, 21)
+                        }
                     }
                     HStack(spacing: 35) {
                         Image(menuItem.menuItemIcon)
@@ -48,8 +58,12 @@ struct MenuContent: View {
     }
 }
 
-//struct MenuContent_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MenuContent(selection: .constant(0))
-//    }
-//}
+func printSomething() {
+    print("X")
+}
+
+struct MenuContent_Previews: PreviewProvider {
+    static var previews: some View {
+        MenuContent(selection: .constant(0), toggleMenu: printSomething)
+    }
+}

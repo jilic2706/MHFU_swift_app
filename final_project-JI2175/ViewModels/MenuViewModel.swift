@@ -17,6 +17,7 @@ enum MenuViewModel: Int, CaseIterable {
     case decorations
     case location
     case bookmarks
+    case search
     
     var menuItemIcon: String {
         switch self {
@@ -29,6 +30,7 @@ enum MenuViewModel: Int, CaseIterable {
         case .decorations: return "decoration"
         case .location: return "location"
         case .bookmarks: return "bookmark"
+        case .search: return "search"
         }
     }
     
@@ -43,6 +45,7 @@ enum MenuViewModel: Int, CaseIterable {
         case .decorations: return "Decoration"
         case .location: return "Locations"
         case .bookmarks: return "Bookmarks"
+        case .search: return "Search"
         }
     }
     
@@ -57,6 +60,7 @@ enum MenuViewModel: Int, CaseIterable {
         case .decorations: return 6
         case .location: return 7
         case .bookmarks: return 8
+        case .search: return 9
         }
     }
 }

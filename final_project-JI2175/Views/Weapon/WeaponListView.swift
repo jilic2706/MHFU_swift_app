@@ -29,5 +29,7 @@ struct WeaponListView: View {
 struct WeaponListView_Previews: PreviewProvider {
     static var previews: some View {
         WeaponListView(bookmarksViewModel: BookmarksViewModel(), appropriateWeapons: WeaponProvider.shared.weapons)
+            
+            
     }
 }

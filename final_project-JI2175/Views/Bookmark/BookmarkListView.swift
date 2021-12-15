@@ -12,6 +12,7 @@ struct BookmarkListView: View {
     
     @ObservedObject var bookmarksViewModel: BookmarksViewModel
     
+    var allWeapons: [Weapon]
     var allSkills: [Skill]
     var allLocations: [Location]
     
@@ -31,7 +32,7 @@ struct BookmarkListView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(bookmarks) { bookmark in
-                        BookmarkRowView(bookmarksViewModel: bookmarksViewModel, entity: bookmark, allSkills: allSkills, allLocations: allLocations)
+                        BookmarkRowView(bookmarksViewModel: bookmarksViewModel, entity: bookmark, allWeapons: allWeapons, allSkills: allSkills, allLocations: allLocations)
                     }
                 }
             }
@@ -41,6 +42,6 @@ struct BookmarkListView: View {
 
 struct BookmarkListView_Previews: PreviewProvider {
     static var previews: some View {
-        BookmarkListView(menuOpened: .constant(false), bookmarksViewModel: BookmarksViewModel(), allSkills: SkillsViewModel().data, allLocations: LocationsViewModel().data)
+        BookmarkListView(menuOpened: .constant(false), bookmarksViewModel: BookmarksViewModel(), allWeapons: WeaponsViewModel().data, allSkills: SkillsViewModel().data, allLocations: LocationsViewModel().data)
     }
 }

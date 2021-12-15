@@ -78,6 +78,7 @@
 		73612D902769071A00E96704 /* WeaponAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D8F2769071A00E96704 /* WeaponAttribute.swift */; };
 		73612D922769320100E96704 /* SharpnessLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D912769320100E96704 /* SharpnessLength.swift */; };
 		73612D9427693E9D00E96704 /* WeaponListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73612D9327693E9D00E96704 /* WeaponListView.swift */; };
+		737A3876276A435E00DAA647 /* StreamlinedWeaponTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737A3875276A435D00DAA647 /* StreamlinedWeaponTreeView.swift */; };
 		7390CA9B2767553D005B7B74 /* GunnerArmorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7390CA9A2767553D005B7B74 /* GunnerArmorsViewModel.swift */; };
 		7390CA9D276759B0005B7B74 /* ArmorResistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7390CA9C276759B0005B7B74 /* ArmorResistance.swift */; };
 		73D4230C276769C100E98A29 /* MinimizedSkillPointRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4230B276769C100E98A29 /* MinimizedSkillPointRowView.swift */; };
@@ -181,6 +182,7 @@
 		73612D8F2769071A00E96704 /* WeaponAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponAttribute.swift; sourceTree = "<group>"; };
 		73612D912769320100E96704 /* SharpnessLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpnessLength.swift; sourceTree = "<group>"; };
 		73612D9327693E9D00E96704 /* WeaponListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListView.swift; sourceTree = "<group>"; };
+		737A3875276A435D00DAA647 /* StreamlinedWeaponTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamlinedWeaponTreeView.swift; sourceTree = "<group>"; };
 		7390CA9A2767553D005B7B74 /* GunnerArmorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunnerArmorsViewModel.swift; sourceTree = "<group>"; };
 		7390CA9C276759B0005B7B74 /* ArmorResistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorResistance.swift; sourceTree = "<group>"; };
 		73D4230B276769C100E98A29 /* MinimizedSkillPointRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimizedSkillPointRowView.swift; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 				73D4230B276769C100E98A29 /* MinimizedSkillPointRowView.swift */,
 				73D4230D27676B6700E98A29 /* SkillPointRowView.swift */,
 				73612D802768FA7A00E96704 /* SharpnessBarView.swift */,
+				737A3875276A435D00DAA647 /* StreamlinedWeaponTreeView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				73612D762768F66200E96704 /* SkillProvider.swift in Sources */,
 				092051EF276107D30019E1C3 /* MonsterSize.swift in Sources */,
 				092051F8276111210019E1C3 /* ArmorPiece.swift in Sources */,
+				737A3876276A435E00DAA647 /* StreamlinedWeaponTreeView.swift in Sources */,
 				09DD89DD2763CC0900B08AA4 /* LocationRowView.swift in Sources */,
 				092052002761241C0019E1C3 /* Quest.swift in Sources */,
 				0962970B2762275A00123630 /* MonsterListView.swift in Sources */,

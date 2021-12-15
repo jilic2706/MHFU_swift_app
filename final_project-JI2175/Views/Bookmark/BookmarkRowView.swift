@@ -11,13 +11,14 @@ struct BookmarkRowView: View {
     @ObservedObject var bookmarksViewModel: BookmarksViewModel
     
     var entity: Entity
+    var allWeapons: [Weapon]
     var allSkills: [Skill]
     var allLocations: [Location]
     
     @ViewBuilder func getDestinationType(entity: Entity) -> some View {
         switch entity.entityType {
         case .monster: MonsterDetailView(bookmarksViewModel: bookmarksViewModel, monster: entity as! Monster, allLocations: allLocations)
-        case .weapon: Text("Weapon")
+        case .weapon: WeaponDetailView(bookmarksViewModel: bookmarksViewModel, weapon: entity as! Weapon, appropriateWeapons: allWeapons)
         case .armor: ArmorDetailView(bookmarksViewModel: bookmarksViewModel, armorSet: entity as! ArmorSet, allSkills: allSkills)
         case .quest: Text("Quest")
         case .item: Text("Item")
@@ -41,6 +42,6 @@ struct BookmarkRowView: View {
 
 struct BookmarkRowView_Previews: PreviewProvider {
     static var previews: some View {
-        BookmarkRowView(bookmarksViewModel: BookmarksViewModel(), entity: Entity(id: 1, name: "Maximillian", description: "", entityType: .monster), allSkills: SkillsViewModel().data, allLocations: LocationsViewModel().data)
+        BookmarkRowView(bookmarksViewModel: BookmarksViewModel(), entity: Entity(id: 1, name: "Maximillian", description: "", entityType: .monster), allWeapons: WeaponProvider.shared.weapons, allSkills: SkillsViewModel().data, allLocations: LocationsViewModel().data)
     }
 }

@@ -24,14 +24,14 @@ struct SharpnessBarView: View {
             ForEach(sharpnessLevels, id: \.self) { sharpness in
                 Rectangle()
                     .fill(sharpness.sharpnessType.color)
-                    .frame(width: barLength * sharpness.sharpnessValue.length, height: 7)
+                    .frame(width: barLength * sharpness.sharpnessValue.length, height: 5)
                 
             }
             Spacer()
         }
-            .border(width: 1, edges: [.trailing, .leading, .top, .bottom], color: Color(.label))
+        .offset(x: 1)
             .frame(width: barLength, height: 7)
-            .background(Color(.label))
+            .background(Color("ModeDependantGray"))
     }
 }
 
@@ -45,6 +45,6 @@ struct SharpnessBarView_Previews: PreviewProvider {
                 Sharpness(sharpnessType: .green, sharpnessValue: .sm),
                 Sharpness(sharpnessType: .blue, sharpnessValue: .m)
         ],
-        isSupersized: false)
+        isSupersized: true)
     }
 }

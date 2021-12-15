@@ -6,19 +6,44 @@
 //
 
 import SwiftUI
+import Kingfisher
 
+
+// Out-Of-Bounds view. Used as a landing view for out-of-bound selections and incomplete views.
 struct OOBView: View {
     @Binding var selection: Int
     
     var body: some View {
-        VStack {
-            Spacer()
-            Text("How'd you get here?")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.purple)
-            Spacer()
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Spacer()
+                KFImage(URL(string: "https://pbs.twimg.com/media/FGdSKbNWQAEjraT?format=jpg&name=900x900"))
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                HStack(spacing: 70) {
+                    ForEach(0..<2) { rep in
+                        Button(
+                            action: {
+                                self.selection = 0
+                            },
+                            label: {
+                                Text("Sorry.")
+                                    .font(.body)
+                                    .fontWeight(.heavy)
+                            }
+                        )
+                            .padding(21)
+                            .background((rep == 0) ? Color.red : Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(35)
+                    }
+                }
+                Spacer()
+            }
         }
+            .navigationBarHidden(true)
     }
 }
 

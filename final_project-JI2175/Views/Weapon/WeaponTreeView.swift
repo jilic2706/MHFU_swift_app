@@ -41,7 +41,7 @@ struct WeaponTreeView: View {
     
     var body: some View {
         NavigationLink(
-            destination: WeaponDetailView(bookmarksViewModel: bookmarksViewModel, weapon: weapon, appropriateWeapons: appropriateWeapons, rarityColor: rarityColor)) {
+            destination: WeaponDetailView(bookmarksViewModel: bookmarksViewModel, weapon: weapon, appropriateWeapons: appropriateWeapons)) {
                 VStack(spacing: 0) {
                     ZStack {
                         HStack() {
